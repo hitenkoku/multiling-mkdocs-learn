@@ -3,7 +3,6 @@ docs_dir: "docs/en/"
 site_dir: "site/en/"
 theme:
   name: material
-  language; en
   features:
     - content.action.edit
     - content.action.view
