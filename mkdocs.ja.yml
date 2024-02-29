@@ -24,8 +24,8 @@ theme:
   extra:
     alternate:
       - name: English
-        link: https://Yamato-Security.github.io/hayabusa/en
+        link: https://hitenkoku.github.io/multiling-mkdocs-learn/en
         lang: en
       - name: Japanese
-        link: https://Yamato-Security.github.io/hayabusa/ja
+        link: https://hitenkoku.github.io/multiling-mkdocs-learn/ja
         lang: ja
