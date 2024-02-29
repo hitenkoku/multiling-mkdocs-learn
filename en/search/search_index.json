@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Welcome to MkDocs Documentation","text":"<p>This project was created for testing purposes with the MkDocs document management structure. The purpose of creating this project is to test the MkDocs system.</p>"}]}
