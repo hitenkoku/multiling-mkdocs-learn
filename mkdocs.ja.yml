@@ -3,6 +3,11 @@ docs_dir: "docs/ja/"
 site_dir: "site/ja/"
 theme:
   name: material
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.tooltips
+    - navigation.sections
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
