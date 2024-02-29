@@ -1,4 +1,6 @@
 site_name: 隼
+docs_dir: "docs/ja/"
+site_dir: "site/ja/"
 theme:
   name: material
   palette:
