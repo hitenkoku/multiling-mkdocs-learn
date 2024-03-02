@@ -1,4 +1,4 @@
-INHERIT: mkdocs.common.yml
+INHERIT: mkdocs.yml
 
 site_name: 隼
 docs_dir: "docs/ja/"

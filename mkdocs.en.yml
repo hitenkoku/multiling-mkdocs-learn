@@ -1,4 +1,4 @@
-INHERIT: mkdocs.common.yml
+INHERIT: mkdocs.yml
 
 site_name: Hayabusa
 docs_dir: "docs/en/"
