@@ -27,7 +27,7 @@ jobs:
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.common.yml
+          args: build --config-file=mkdocs.common.yml --clean
 
       # - name: Copy redirect index page
       #   run: sudo cp /index.html /site
