@@ -3,7 +3,6 @@ site_author: Berkant Şahin
 repo_name: berkantsahn/mkdocs-sample
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/"
 docs_dir: "docs/"
-site_dir: "docs/"
 
 theme:
   name: material
