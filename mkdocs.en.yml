@@ -1,3 +1,5 @@
+INHERIT: mkdocs.common.yml
+
 site_name: Hayabusa
 docs_dir: "docs/en/"
 site_dir: "site/en/"
