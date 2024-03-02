@@ -4,45 +4,60 @@ site_name: 隼
 docs_dir: "docs/ja/"
 site_dir: "site/ja/"
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/"
-language: ja
 theme:
   name: material
-  language: ja
-  features:
-    - content.action.edit
-    - content.action.view
-    - content.tooltips
-    - navigation.sections
+  direction: ltr
+  language: tr
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: default
+      primary: teal
+      accent: amber
       toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+        icon: material/lightbulb
+        name: Karanlık moda geç
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/lightbulb-outline
+        name: Aydınlık moda geç
+  features:
+    - search.suggest
+    - search.highlight
+    #  - navigation.indexes
+    #  - navigation.sections
+    #  - navigation.tabs
+    #  - navigation.tabs.sticky
+    - navigation.path
+    #  - navigation.top
+    #  - navigation.expand
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/git-alt
+plugins:
+  - search:
+      lang: tr
 extra:
   version:
     provider: mike
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/berkantsahn
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/berkantsahn
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/berkantsahn
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/berkantsahn
   alternate:
-    - name: English
-      link: https://hitenkoku.github.io/multiling-mkdocs-learn/en
+    - name: tr - Türkçe
+      link: https://berkantsahn.github.io/mkdocs-sample/tr/
+      lang: tr
+    - name: en - English
+      link: https://berkantsahn.github.io/mkdocs-sample/en/
       lang: en
-    - name: Japanese
-      link: https://hitenkoku.github.io/multiling-mkdocs-learn/ja
-      lang: ja
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -60,4 +75,4 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
 copyright: |
-  &copy; 2023 <a href="https://github.com/hitenkoku"  target="_blank" rel="noopener">DustInDark</a>
+  &copy; 2023 <a href="https://github.com/berkantsahn"  target="_blank" rel="noopener">Berkant Şahin</a>
