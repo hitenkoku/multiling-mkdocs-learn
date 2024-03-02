@@ -75,7 +75,8 @@ markdown_extensions:
   - pymdownx.keys
 
 plugins:
-  search: { }
+  - search: { }
+  - projects
 
 copyright: |
   &copy; 2023 <a href="https://github.com/berkantsahn"  target="_blank" rel="noopener">Berkant Şahin</a>
