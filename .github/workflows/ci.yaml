@@ -27,7 +27,7 @@ jobs:
         uses: ./
         with:
           entrypoint: mkdocs
-          args: build --config-file=mkdocs.common.yml
+          args: build --config-file=mkdocs.yml
 
       - uses: actions/setup-python@v4
         with:
@@ -41,4 +41,4 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mike --force-reinstall --verbose
       # - run: mike deploy --push --update-aliases 1.0 latest --ignore
-      # - run: mkdocs gh-deploy --force
+      - run: mkdocs gh-deploy --force
