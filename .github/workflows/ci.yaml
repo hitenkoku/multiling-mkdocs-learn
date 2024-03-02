@@ -13,11 +13,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Build docs
-        uses: ./
-        with:
-          entrypoint: mkdocs
-          args: build --config-file=mkdocs.common.yml
       - name: Build JA docs
         uses: ./
         with:
@@ -28,6 +23,11 @@ jobs:
         with:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.en.yml
+      - name: Build docs
+        uses: ./
+        with:
+          entrypoint: mkdocs
+          args: build --config-file=mkdocs.common.yml
 
       # - name: Copy redirect index page
       #   run: sudo cp /index.html /site
