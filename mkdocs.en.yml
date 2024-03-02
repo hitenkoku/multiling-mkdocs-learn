@@ -4,7 +4,6 @@ site_name: Hayabusa
 docs_dir: "docs/en/"
 site_dir: "site/en/"
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/"
-language: en
 theme:
   name: material
   features:

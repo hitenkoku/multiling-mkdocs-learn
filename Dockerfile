@@ -1,4 +1,4 @@
-FROM squidfunk/mkdocs-material:9.0.9
+FROM squidfunk/mkdocs-material:latest
 
 # required for mkdocs-git-committers-plugin-2
 RUN apk add --no-cache --virtual .build-deps gcc libc-dev libxslt-dev && \
@@ -8,7 +8,7 @@ RUN apk add --no-cache --virtual .build-deps gcc libc-dev libxslt-dev && \
 
 RUN pip install --no-cache-dir \
     mkdocs-git-revision-date-localized-plugin \
-    # mkdocs-git-committers-plugin-2 \
+    mkdocs-git-committers-plugin-2 \
     # hotfix for authors because file move resets contributors list
     git+https://github.com/tibitoth/mkdocs-git-committers-plugin-2.git@master \
     mkdocs-glightbox
@@ -19,4 +19,4 @@ EXPOSE 8000
 
 ENTRYPOINT ["mkdocs", "serve", "--dev-addr=0.0.0.0:8000" ]
 
-CMD ["--config-file=mkdocs.common.yml"]
+CMD ["--config-file=mkdocs.ja.yml"]
