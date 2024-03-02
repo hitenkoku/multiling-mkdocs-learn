@@ -1,7 +1,7 @@
 site_name: MkDocs Örnek
 site_author: Berkant Şahin
 repo_name: berkantsahn/mkdocs-sample
-repo_url: https://github.com/berkantsahn/mkdocs-sample/
+site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/"
 
 theme:
   name: material
