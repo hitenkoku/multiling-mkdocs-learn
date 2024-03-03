@@ -29,7 +29,7 @@ jobs:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.yml
       - name: assets cp
-        run: cp -r ./assets/* overrides/
+        run: cp -r ./site/assets overrides/
 
       - uses: actions/setup-python@v4
         with:
