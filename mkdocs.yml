@@ -7,7 +7,6 @@ site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/"
 
 theme:
   name: "material"
-  custom_dir: "./assets"
   icon:
     repo: fontawesome/brands/github
   palette:
