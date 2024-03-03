@@ -6,8 +6,7 @@ site_dir: "site/en/"
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/"
 theme:
   name: material
-  extra_css:
-    - assets/css/style.css
+  custom_dir: "./assets"
   features:
     - content.action.edit
     - content.action.view
