@@ -6,7 +6,7 @@ site_dir: "site/ja/"
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/"
 theme:
   name: material
-  custom_dir: "./overrides"
+  custom_dir: "../overrides"
   language: ja
   palette:
     - media: "(prefers-color-scheme: dark)"
