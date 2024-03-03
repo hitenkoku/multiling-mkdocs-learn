@@ -13,6 +13,8 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - run: pip install mkdocs-material
+      - run: pip install mike --force-reinstall --verbose
       - name: Build JA docs
         uses: ./
         with:
@@ -37,7 +39,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
-      - run: pip install mkdocs-material
-      - run: pip install mike --force-reinstall --verbose
       # - run: mike deploy --push --update-aliases 1.0 latest --ignore
       # - run: mkdocs gh-deploy --force
