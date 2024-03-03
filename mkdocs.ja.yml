@@ -3,7 +3,7 @@ INHERIT: mkdocs.yml
 site_name: 隼
 docs_dir: "docs/ja/"
 site_dir: "site/ja/"
-site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/"
+site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/ja/"
 theme:
   name: material
   language: ja
