@@ -41,4 +41,4 @@ jobs:
           publish_dir: ./site
       - run: sudo chmod 777 ./* -R
       # - run: mike deploy --push --update-aliases 1.0 latest --ignore
-      - run: mkdocs gh-deploy --force
+      - run: sudo cp -rf ./site/* ./docs
