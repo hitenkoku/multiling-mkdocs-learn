@@ -28,9 +28,6 @@ jobs:
         with:
           entrypoint: mkdocs
           args: build --config-file=mkdocs.yml
-      - name: assets cp
-        run: cp -rf ./site/assets ./site/en && cp -rf ./site/assets ./site/ja
-
       - uses: actions/setup-python@v4
         with:
           python-version: 3.11
