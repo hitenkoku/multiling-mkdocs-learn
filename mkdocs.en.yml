@@ -6,7 +6,6 @@ site_dir: "site/en/"
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/"
 theme:
   name: material
-  custom_dir: "./overrides"
   features:
     - content.action.edit
     - content.action.view
