@@ -39,6 +39,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
-      - run: sudo chmod 777 ./* -R
-      # - run: mike deploy --push --update-aliases 1.0 latest --ignore
-      - run: sudo cp -rf ./site/* ./docs
