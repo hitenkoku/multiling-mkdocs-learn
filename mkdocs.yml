@@ -50,10 +50,10 @@ extra:
       link: https://twitter.com/SecurityYamato
   alternate:
     - name: en - English
-      link: https://Yamato-Security.github.io/hayabusa/en
+      link: https://hitenkoku.github.io/multiling-mkdocs-learn/en/
       lang: en
     - name: ja - 日本語
-      link: https://Yamato-Security.github.io/hayabusa/ja
+      link: https://hitenkoku.github.io/multiling-mkdocs-learn/ja/
       lang: ja
 
 markdown_extensions:
