@@ -3,7 +3,7 @@ site_author: Yamato Security
 repo_name: yamato-security/hayabusa
 docs_dir: "mkdocs/"
 site_dir: "site/"
-site_url: "https://Yamato-Security.github.io/hayabusa/"
+site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn"
 
 theme:
   name: "material"
