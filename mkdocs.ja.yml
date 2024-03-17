@@ -45,15 +45,13 @@ extra:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/Yamato-Security
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/berkantsahn
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/berkantsahn
+      link: https://twitter.com/SecurityYamato
   alternate:
-    - name: tr - Türkçe
-      link: https://berkantsahn.github.io/mkdocs-sample/tr/
+    - name: ja - 日本語
+      link: https://hitenkoku.github.io/multiling-mkdocs-learn/ja/
       lang: tr
     - name: en - English
-      link: https://berkantsahn.github.io/mkdocs-sample/en/
+      link: https://hitenkoku.github.io/multiling-mkdocs-learn/en/
       lang: en
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6

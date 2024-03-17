@@ -36,10 +36,10 @@ extra:
     provider: mike
   alternate:
     - name: English
-      link: https://Yamato-Security.github.io/hayabusa/en
+      link: https://hitenkoku.github.io/multiling-mkdocs-learn/en
       lang: en
     - name: Japanese
-      link: https://Yamato-Security.github.io/hayabusa/ja
+      link: https://hitenkoku.github.io/multiling-mkdocs-learn/ja
       lang: ja
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6

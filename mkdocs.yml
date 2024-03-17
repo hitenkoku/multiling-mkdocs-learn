@@ -38,7 +38,7 @@ theme:
     - content.action.edit
 
 nav:
-  - "Hayabusa": https://Yamato-Security.github.io/hayabusa/
+  - "Hayabusa": https://hitenkoku.github.io/hayabusa/
   - "Hayabusa Rules": https://github.com/Yamato-Security/hayabusa-rules
   - "Takajo": https://github.com/Yamato-Security/takajo
 
