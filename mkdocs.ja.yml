@@ -28,13 +28,13 @@ theme:
   features:
     - search.suggest
     - search.highlight
-    #  - navigation.indexes
-    #  - navigation.sections
-    #  - navigation.tabs
-    #  - navigation.tabs.sticky
+      - navigation.indexes
+      - navigation.sections
+      - navigation.tabs
+      - navigation.tabs.sticky
     - navigation.path
-    #  - navigation.top
-    #  - navigation.expand
+      - navigation.top
+      - navigation.expand
     - content.code.copy
   icon:
     repo: fontawesome/brands/git-alt
