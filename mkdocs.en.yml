@@ -1,7 +1,7 @@
 INHERIT: mkdocs.yml
 
 site_name: Hayabusa
-docs_dir: "docs/en/"
+docs_dir: "mkdocs/en/"
 site_dir: "site/en/"
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/en/"
 theme:
@@ -36,10 +36,10 @@ extra:
     provider: mike
   alternate:
     - name: English
-      link: https://hitenkoku.github.io/multiling-mkdocs-learn/en
+      link: https://Yamato-Security.github.io/hayabusa/en
       lang: en
     - name: Japanese
-      link: https://hitenkoku.github.io/multiling-mkdocs-learn/ja
+      link: https://Yamato-Security.github.io/hayabusa/ja
       lang: ja
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js #?features=es6
@@ -58,4 +58,4 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
 copyright: |
-  &copy; 2023 <a href="https://github.com/hitenkoku"  target="_blank" rel="noopener">DustInDark</a>
+  &copy; 2024 <a href="https://github.com/Yamato-Security"  target="_blank" rel="noopener">Yamato Security</a>

@@ -1,9 +1,9 @@
 INHERIT: mkdocs.yml
 
 site_name: 隼
-docs_dir: "docs/ja/"
+docs_dir: "mkdocs/ja/"
 site_dir: "site/ja/"
-site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/ja/"
+site_url: "https://Yamato-Security.github.io/hayabusa/ja/"
 theme:
   name: material
   language: ja
@@ -43,13 +43,11 @@ extra:
     provider: mike
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/berkantsahn
+      link: https://github.com/Yamato-Security
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/berkantsahn
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/berkantsahn
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/berkantsahn
   alternate:
     - name: tr - Türkçe
       link: https://berkantsahn.github.io/mkdocs-sample/tr/
@@ -74,4 +72,4 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
 copyright: |
-  &copy; 2023 <a href="https://github.com/berkantsahn"  target="_blank" rel="noopener">Berkant Şahin</a>
+  &copy; 2024 <a href="https://github.com/Yamato-Security"  target="_blank" rel="noopener">Yamato Security</a>

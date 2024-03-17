@@ -1,0 +1,87 @@
+title: PowerView PowerShell Cmdlets - ScriptBlock
+id: dcd74b95-3f36-4ed9-9598-0490951643aa
+related:
+    -   id: b2317cfa-4a47-4ead-b3ff-297438c0bc2d
+        type: similar
+status: test
+description: Detects Cmdlet names from PowerView of the PowerSploit exploitation framework.
+references:
+    - https://powersploit.readthedocs.io/en/stable/Recon/README
+    - https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon
+    - https://thedfirreport.com/2020/10/08/ryuks-return
+    - https://adsecurity.org/?p=2277
+author: Bhabesh Raj
+date: 2021/05/18
+modified: 2023/11/22
+tags:
+    - attack.execution
+    - attack.t1059.001
+logsource:
+    product: windows
+    category: ps_script
+    definition: 'Requirements: Script Block Logging must be enabled'
+detection:
+    ps_script:
+        EventID: 4104
+        Channel:
+            - Microsoft-Windows-PowerShell/Operational
+            - PowerShellCore/Operational
+    selection:
+        ScriptBlockText|contains:
+            - Export-PowerViewCSV
+            - Find-DomainLocalGroupMember
+            - Find-DomainObjectPropertyOutlier
+            - Find-DomainProcess
+            - Find-DomainShare
+            - Find-DomainUserEvent
+            - Find-DomainUserLocation
+            - Find-ForeignGroup
+            - Find-ForeignUser
+            - Find-GPOComputerAdmin
+            - Find-GPOLocation
+            - Find-InterestingDomain
+            - Find-InterestingFile
+            - Find-LocalAdminAccess
+            - Find-ManagedSecurityGroups
+            - Get-CachedRDPConnection
+            - Get-DFSshare
+            - Get-DomainDFSShare
+            - Get-DomainDNSRecord
+            - Get-DomainDNSZone
+            - Get-DomainFileServer
+            - Get-DomainGPOComputerLocalGroupMapping
+            - Get-DomainGPOLocalGroup
+            - Get-DomainGPOUserLocalGroupMapping
+            - Get-LastLoggedOn
+            - Get-LoggedOnLocal
+            - Get-NetFileServer
+            - Get-NetForest
+            - Get-NetGPOGroup
+            - Get-NetProcess
+            - Get-NetRDPSession
+            - Get-RegistryMountedDrive
+            - Get-RegLoggedOn
+            - Get-WMIRegCachedRDPConnection
+            - Get-WMIRegLastLoggedOn
+            - Get-WMIRegMountedDrive
+            - Get-WMIRegProxy
+            - Invoke-ACLScanner
+            - Invoke-CheckLocalAdminAccess
+            - Invoke-EnumerateLocalAdmin
+            - Invoke-EventHunter
+            - Invoke-FileFinder
+            - Invoke-Kerberoast
+            - Invoke-MapDomainTrust
+            - Invoke-ProcessHunter
+            - Invoke-RevertToSelf
+            - Invoke-ShareFinder
+            - Invoke-UserHunter
+            - Invoke-UserImpersonation
+            - Remove-RemoteConnection
+            - Request-SPNTicket
+            - Resolve-IPAddress
+    condition: ps_script and selection
+falsepositives:
+    - Unknown
+level: high
+ruletype: Sigma

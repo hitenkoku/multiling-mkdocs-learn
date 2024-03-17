@@ -1,0 +1,31 @@
+title: Windows Update Error
+id: 13cfeb75-9e33-4d04-b0f7-ab8faaa95a59
+status: stable
+description: Detects Windows update errors including installation failures and connection
+    issues. Defenders should observe this in case critical update KB aren't installed.
+author: frack113
+date: 2021/12/04
+modified: 2023/09/07
+tags:
+    - attack.impact
+    - attack.resource_development
+    - attack.t1584
+logsource:
+    product: windows
+    service: system
+detection:
+    system:
+        Channel: System
+    selection:
+        Provider_Name: Microsoft-Windows-WindowsUpdateClient
+        EventID:
+            - 16
+            - 20
+            - 24
+            - 213
+            - 217
+    condition: system and selection
+falsepositives:
+    - Unknown
+level: informational
+ruletype: Sigma
