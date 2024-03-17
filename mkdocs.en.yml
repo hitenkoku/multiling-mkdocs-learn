@@ -9,6 +9,8 @@ favicon: "overrides/assets/images/favicon.png"
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/en/"
 theme:
   name: material
+  icon:
+    logo: "assets/images/favicon.png"
   features:
     - content.action.edit
     - content.action.view
