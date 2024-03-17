@@ -3,6 +3,9 @@ INHERIT: mkdocs.yml
 site_name: 隼
 docs_dir: "mkdocs/ja/"
 site_dir: "site/ja/"
+custom_dir: "overrides/"
+logo: "overrides/assets/images/logo.png"
+favicon: "overrides/assets/images/favicon.png"
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/ja/"
 theme:
   name: material
