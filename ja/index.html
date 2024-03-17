@@ -413,9 +413,9 @@
 
 <div align="center">
  <p>
-    <img alt="Hayabusa Logo" src="logo.png" width="60%">
+    <img alt="Hayabusa Logo" src="assets/images/logo.png" width="60%">
  </p>
-  [<a href="README.md">English</a>] | [<b>日本語</b>]
+  [<a href="../en">English</a>] | [<b>日本語</b>]
 </div>
 
 <hr />
@@ -437,7 +437,7 @@
 </p>
 
 <h1 id="hayabusa">Hayabusa について<a class="headerlink" href="#hayabusa" title="Permanent link">&para;</a></h1>
-<p>Hayabusaは、日本の<a href="https://yamatosecurity.connpass.com/">Yamato Security</a>グループによって作られた**Windowsイベントログのファストフォレンジックタイムライン作成**および**脅威ハンティングツール**です。 Hayabusaは日本語で<a href="https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%A4%E3%83%96%E3%82%B5">「ハヤブサ」</a>を意味し、ハヤブサが世界で最も速く、狩猟(hunting)に優れ、とても訓練しやすい動物であることから選ばれました。<a href="https://www.rust-lang.org/">Rust</a> で開発され、マルチスレッドに対応し、可能な限り高速に動作するよう配慮されています。<a href="https://github.com/SigmaHQ/Sigma">Sigma</a>ルールをHayabusaルール形式に変換する<a href="https://github.com/Yamato-Security/hayabusa-rules/tree/main/tools/sigmac">ツール</a>も提供しています。Hayabusaの検知ルールもSigmaと同様にYML形式であり、カスタマイズ性や拡張性に優れます。稼働中のシステムで実行してライブ調査することも、複数のシステムからログを収集してオフライン調査することも可能です。また、 <a href="https://docs.velociraptor.app/">Velociraptor</a>と<a href="https://docs.velociraptor.app/exchange/artifacts/pages/windows.eventlogs.hayabusa/">Hayabusa artifact</a>を用いることで企業向けの広範囲なスレットハンティングとインシデントレスポンスにも活用できます。出力は一つのCSVタイムラインにまとめられ、<a href="https://www.libreoffice.org/">LibreOffice</a>、<a href="https://ericzimmerman.github.io/#!index.md">Timeline Explorer</a>、<a href="doc/ElasticStackImport/ElasticStackImport-Japanese.md">Elastic Stack</a>、<a href="https://timesketch.org/">Timesketch</a>等で簡単に分析できるようになります。</p>
+<p>Hayabusaは、日本の<a href="https://yamatosecurity.connpass.com/">Yamato Security</a>グループによって作られた**Windowsイベントログのファストフォレンジックタイムライン作成**および**脅威ハンティングツール**です。 Hayabusaは日本語で<a href="https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%A4%E3%83%96%E3%82%B5">「ハヤブサ」</a>を意味し、ハヤブサが世界で最も速く、狩猟(hunting)に優れ、とても訓練しやすい動物であることから選ばれました。<a href="https://www.rust-lang.org/">Rust</a> で開発され、マルチスレッドに対応し、可能な限り高速に動作するよう配慮されています。<a href="https://github.com/SigmaHQ/Sigma">Sigma</a>ルールをHayabusaルール形式に変換する<a href="https://github.com/Yamato-Security/hayabusa-rules/tree/main/tools/sigmac">ツール</a>も提供しています。Hayabusaの検知ルールもSigmaと同様にYML形式であり、カスタマイズ性や拡張性に優れます。稼働中のシステムで実行してライブ調査することも、複数のシステムからログを収集してオフライン調査することも可能です。また、 <a href="https://docs.velociraptor.app/">Velociraptor</a>と<a href="https://docs.velociraptor.app/exchange/artifacts/pages/windows.eventlogs.hayabusa/">Hayabusa artifact</a>を用いることで企業向けの広範囲なスレットハンティングとインシデントレスポンスにも活用できます。出力は一つのCSVタイムラインにまとめられ、<a href="https://www.libreoffice.org/">LibreOffice</a>、<a href="https://ericzimmerman.github.io/#!index.md">Timeline Explorer</a>、<a href="assets/images/ElasticStackImport/ElasticStackImport-Japanese.md">Elastic Stack</a>、<a href="https://timesketch.org/">Timesketch</a>等で簡単に分析できるようになります。</p>
 <h1 id="_1">関連プロジェクト<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <ul>
 <li><a href="https://github.com/Yamato-Security/EnableWindowsLogSettings">EnableWindowsLogSettings</a> - Sigmaベースの脅威ハンティングと、Windowsイベントログのファストフォレンジックタイムライン生成ツール。</li>
@@ -590,37 +590,37 @@
 <p>Windowsのイベントログは、1）解析が困難なデータ形式であること、2）データの大半がノイズであり調査に有用でないことから、従来は非常に長い時間と手間がかかる解析作業となっていました。
 Hayabusaは、有用なデータのみを抽出し、専門的なトレーニングを受けた分析者だけでなく、Windowsのシステム管理者であれば誰でも利用できる読みやすい形式で提示することを主な目的としています。
 Hayabusaは従来のWindowsイベントログ分析解析と比較して、分析者が20%の時間で80%の作業を行えるようにすることを目指しています。</p>
-<p><img alt="DFIR Timeline" src="doc/DFIR-TimelineCreation-JP.png" /></p>
+<p><img alt="DFIR Timeline" src="assets/images/DFIR-TimelineCreation-JP.png" /></p>
 <h1 id="_5">スクリーンショット<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
 <h2 id="_6">起動<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p><img alt="Hayabusa 起動画面" src="screenshots/Startup.png" /></p>
+<p><img alt="Hayabusa 起動画面" src="assets/images/Startup.png" /></p>
 <h2 id="dfir_1">DFIRタイムラインのターミナル出力<a class="headerlink" href="#dfir_1" title="Permanent link">&para;</a></h2>
-<p><img alt="Hayabusa ターミナル出力画面" src="screenshots/Results.png" /></p>
+<p><img alt="Hayabusa ターミナル出力画面" src="assets/images/Results.png" /></p>
 <h2 id="_7">キーワード検索結果<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p><img alt="Hayabusa search results" src="screenshots/SearchResults.png" /></p>
+<p><img alt="Hayabusa search results" src="assets/images/SearchResults.png" /></p>
 <h2 id="-t">検知頻度タイムライン出力 (<code>-T</code>オプション)<a class="headerlink" href="#-t" title="Permanent link">&para;</a></h2>
-<p><img alt="Hayabusa 検知頻度タイムライン出力画面" src="screenshots/DetectionFrequencyTimeline.png" /></p>
+<p><img alt="Hayabusa 検知頻度タイムライン出力画面" src="assets/images/DetectionFrequencyTimeline.png" /></p>
 <h2 id="results-summary">結果サマリ (Results Summary)<a class="headerlink" href="#results-summary" title="Permanent link">&para;</a></h2>
-<p><img alt="Hayabusa 結果サマリ画面" src="screenshots/ResultsSummary.png" /></p>
+<p><img alt="Hayabusa 結果サマリ画面" src="assets/images/ResultsSummary.png" /></p>
 <h2 id="html-h">HTMLの結果サマリ (<code>-H</code>オプション)<a class="headerlink" href="#html-h" title="Permanent link">&para;</a></h2>
-<p><img alt="Hayabusa results summary" src="screenshots/HTML-ResultsSummary-1.png" /></p>
-<p><img alt="Hayabusa results summary" src="screenshots/HTML-ResultsSummary-2.png" /></p>
-<p><img alt="Hayabusa results summary" src="screenshots/HTML-ResultsSummary-3.png" /></p>
+<p><img alt="Hayabusa results summary" src="assets/images/HTML-ResultsSummary-1.png" /></p>
+<p><img alt="Hayabusa results summary" src="assets/images/HTML-ResultsSummary-2.png" /></p>
+<p><img alt="Hayabusa results summary" src="assets/images/HTML-ResultsSummary-3.png" /></p>
 <h2 id="libreofficedfir-m">LibreOfficeでのDFIRタイムライン解析 (<code>-M</code> マルチライン出力)<a class="headerlink" href="#libreofficedfir-m" title="Permanent link">&para;</a></h2>
-<p><img alt="Hayabusa analysis in LibreOffice" src="screenshots/DFIR-TimelineLibreOfficeMultiline.jpeg" /></p>
+<p><img alt="Hayabusa analysis in LibreOffice" src="assets/images/DFIR-TimelineLibreOfficeMultiline.jpeg" /></p>
 <h2 id="timeline-explorerdfir">Timeline ExplorerでのDFIRタイムライン解析<a class="headerlink" href="#timeline-explorerdfir" title="Permanent link">&para;</a></h2>
-<p><img alt="Hayabusa Timeline Explorerでの解析" src="screenshots/TimelineExplorer-ColoredTimeline.png" /></p>
+<p><img alt="Hayabusa Timeline Explorerでの解析" src="assets/images/TimelineExplorer-ColoredTimeline.png" /></p>
 <h2 id="critical">Criticalアラートのフィルタリングとコンピュータごとのグルーピング<a class="headerlink" href="#critical" title="Permanent link">&para;</a></h2>
-<p><img alt="Timeline ExplorerでCriticalアラートのフィルタリングとコンピュータグルーピング" src="screenshots/TimelineExplorer-CriticalAlerts-ComputerGrouping.png" /></p>
+<p><img alt="Timeline ExplorerでCriticalアラートのフィルタリングとコンピュータグルーピング" src="assets/images/TimelineExplorer-CriticalAlerts-ComputerGrouping.png" /></p>
 <h2 id="elastic-stack">Elastic Stackダッシュボードでの解析<a class="headerlink" href="#elastic-stack" title="Permanent link">&para;</a></h2>
-<p><img alt="Elastic Stack Dashboard 1" src="doc/ElasticStackImport/17-HayabusaDashboard-1.png" /></p>
-<p><img alt="Elastic Stack Dashboard 2" src="doc/ElasticStackImport/18-HayabusaDashboard-2.png" /></p>
+<p><img alt="Elastic Stack Dashboard 1" src="assets/images/ElasticStackImport/17-HayabusaDashboard-1.png" /></p>
+<p><img alt="Elastic Stack Dashboard 2" src="assets/images/ElasticStackImport/18-HayabusaDashboard-2.png" /></p>
 <h2 id="timesketch">Timesketchでの解析<a class="headerlink" href="#timesketch" title="Permanent link">&para;</a></h2>
-<p><img alt="Timesketch" src="screenshots/TimesketchAnalysis.png" /></p>
+<p><img alt="Timesketch" src="assets/images/TimesketchAnalysis.png" /></p>
 <h1 id="_8">タイムライン結果のインポートと解析について<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h1>
-<p>CSVのタイムラインをExcelやTimeline Explorerで分析する方法は<a href="doc/CSV-AnalysisWithExcelAndTimelineExplorer-Japanese.pdf">こちら</a>で紹介しています。</p>
-<p>CSVのタイムラインをElastic Stackにインポートする方法は<a href="doc/ElasticStackImport/ElasticStackImport-Japanese.md">こちら</a>で紹介しています。</p>
-<p>CSVのタイムラインをTimesketchにインポートする方法は<a href="doc/TimesketchImport/TimesketchImport-Japanese.md">こちら</a>で紹介しています。</p>
+<p>CSVのタイムラインをExcelやTimeline Explorerで分析する方法は<a href="assets/images/CSV-AnalysisWithExcelAndTimelineExplorer-Japanese.pdf">こちら</a>で紹介しています。</p>
+<p>CSVのタイムラインをElastic Stackにインポートする方法は<a href="assets/images/ElasticStackImport/ElasticStackImport-Japanese.md">こちら</a>で紹介しています。</p>
+<p>CSVのタイムラインをTimesketchにインポートする方法は<a href="assets/images/TimesketchImport/TimesketchImport-Japanese.md">こちら</a>で紹介しています。</p>
 <h1 id="jqjson">jqによるJSON形式の結果の解析<a class="headerlink" href="#jqjson" title="Permanent link">&para;</a></h1>
 <p>JSON形式の結果を<code>jq</code>で解析する方法については、<a href="/doc/AnalysisWithJQ-Japanese.md">こちら</a>を参照してください。</p>
 <h1 id="_9">特徴＆機能<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h1>
@@ -791,14 +791,14 @@ MUSLバイナリはGNUバイナリより約15％遅いですが、より多く�
 <div class="highlight"><pre><span></span><code>./hayabusa
 </code></pre></div>
 <p>macOSの最新版では、以下のセキュリティ警告が出る可能性があります：</p>
-<p><img alt="Mac Error 1 JP" src="screenshots/MacOS-RunError-1-JP.png" /></p>
+<p><img alt="Mac Error 1 JP" src="assets/images/MacOS-RunError-1-JP.png" /></p>
 <p>macOSの環境設定から「セキュリティとプライバシー」を開き、「一般」タブから「このまま許可」ボタンをクリックしてください。</p>
-<p><img alt="Mac Error 2 JP" src="screenshots/MacOS-RunError-2-JP.png" /></p>
+<p><img alt="Mac Error 2 JP" src="assets/images/MacOS-RunError-2-JP.png" /></p>
 <p>その後、ターミナルからもう一回実行してみてください：</p>
 <div class="highlight"><pre><span></span><code>./hayabusa
 </code></pre></div>
 <p>以下の警告が出るので、「開く」をクリックしてください。</p>
-<p><img alt="Mac Error 3 JP" src="screenshots/MacOS-RunError-3-JP.png" /></p>
+<p><img alt="Mac Error 3 JP" src="assets/images/MacOS-RunError-3-JP.png" /></p>
 <p>これで実行できるようになります。</p>
 <h1 id="_14">コマンド一覧<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h1>
 <h2 id="_15">分析コマンド:<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
@@ -866,7 +866,7 @@ General Options:
 <li>結果をCSVファイルに保存する: <code>hayabusa.exe computer-metrics -d ../logs -o computer-metrics.csv</code></li>
 </ul>
 <h4 id="computer-metrics_2"><code>computer-metrics</code>のスクリーンショット<a class="headerlink" href="#computer-metrics_2" title="Permanent link">&para;</a></h4>
-<p><img alt="computer-metrics screenshot" src="screenshots/ComputerMetrics.png" /></p>
+<p><img alt="computer-metrics screenshot" src="assets/images/ComputerMetrics.png" /></p>
 <h3 id="eid-metrics"><code>eid-metrics</code>コマンド<a class="headerlink" href="#eid-metrics" title="Permanent link">&para;</a></h3>
 <p><code>eid-metrics</code>コマンドを使用すると、イベントID(<code>&lt;System&gt;&lt;EventID&gt;</code>フィールド)の総数や割合をチャンネルごとに分けて表示することができます。
 このコマンドは検知ルールを使用しないので、すべてのイベントをスキャンします。</p>
@@ -924,7 +924,7 @@ Microsoft-Windows-Sysmon/Operational,3,Network Connection.
 Microsoft-Windows-Sysmon/Operational,4,Sysmon Service State Changed.
 </code></pre></div></p>
 <h4 id="eid-metrics_3"><code>eid-metrics</code>のスクリーンショット<a class="headerlink" href="#eid-metrics_3" title="Permanent link">&para;</a></h4>
-<p><img alt="eid-metrics screenshot" src="screenshots/EID-Metrics.png" /></p>
+<p><img alt="eid-metrics screenshot" src="assets/images/EID-Metrics.png" /></p>
 <h3 id="logon-summary"><code>logon-summary</code>コマンド<a class="headerlink" href="#logon-summary" title="Permanent link">&para;</a></h3>
 <p><code>logon-summary</code>コマンドを使うことでログオン情報の要約(ユーザ名、ログイン成功数、ログイン失敗数)の画面出力ができます。
 単体のevtxファイルを解析したい場合は<code>-f</code>オプションを利用してください。複数のevtxファイルを対象としたい場合は<code>-d</code>オプションを合わせて使うことでevtxファイルごとのログイン情報の要約を出力できます。</p>
@@ -974,8 +974,8 @@ Time Format:
 <li>ログオンサマリ結果を保存する: <code>hayabusa.exe logon-summary -d ../logs -o logon-summary.csv</code></li>
 </ul>
 <h4 id="logon-summary_2"><code>logon-summary</code>のスクリーンショット<a class="headerlink" href="#logon-summary_2" title="Permanent link">&para;</a></h4>
-<p><img alt="logon-summary successful logons screenshot" src="screenshots/LogonSummarySuccessfulLogons.png" /></p>
-<p><img alt="logon-summary failed logons screenshot" src="screenshots/LogonSummaryFailedLogons.png" /></p>
+<p><img alt="logon-summary successful logons screenshot" src="assets/images/LogonSummarySuccessfulLogons.png" /></p>
+<p><img alt="logon-summary failed logons screenshot" src="assets/images/LogonSummaryFailedLogons.png" /></p>
 <h3 id="pivot-keywords-list"><code>pivot-keywords-list</code>コマンド<a class="headerlink" href="#pivot-keywords-list" title="Permanent link">&para;</a></h3>
 <p><code>pivot-keywords-list</code>コマンドを使用すると、異常なユーザ、ホスト名、プロセスなどを迅速に特定し、イベントを関連付けるための固有のピボットキーワードのリストを作成することができます。</p>
 <p>重要：デフォルトでは、Hayabusaはすべてのイベント（informationalおよびそれ以上）から結果を返すので、<code>pivot-keywords-list</code>コマンドと<code>-m, --min-level</code>オプションを組み合わせることを強くお勧めします。
@@ -1884,7 +1884,7 @@ Hayabusaルールは、Windowsのイベントログ解析専用に設計され�
 <li>2023/12/11 Christian Henriksen氏による<a href="https://detect.fyi/hunting-with-hayabusa-tool-showcase-aafef7434413">Unleashing the Hayabusa Feathers: My Top Features Revealed!</a></li>
 <li>2023/10/16 Md. Mahim Bin Firoj氏による<a href="https://mahim-firoj.medium.com/incident-response-and-threat-hunting-using-hayabusa-tool-383da273183a">Incident response and threat hunting using hayabusa tool</a></li>
 <li>2023/03/21 <a href="https://twitter.com/eric_capuano">Eric Capuano</a>氏による<a href="https://blog.ecapuano.com/p/find-threats-in-event-logs-with-hayabusa">Find Threats in Event Logs with Hayabusa</a></li>
-<li>2023/03/14 Fukusuke Takahashi氏による<a href="doc/RustPerformance-English.md">Hayabusa開発者向けRustパフォーマンスガイド</a></li>
+<li>2023/03/14 Fukusuke Takahashi氏による<a href="assets/images/RustPerformance-English.md">Hayabusa開発者向けRustパフォーマンスガイド</a></li>
 <li>2022/06/19 <a href="https://twitter.com/eric_capuano">Eric Capuano</a>氏による<a href="https://www.youtube.com/watch?v=Q1IoGX--814">VelociraptorチュートリアルとHayabusaの統合方法</a></li>
 <li>2022/01/24 Matthew Seyer (<a href="https://twitter.com/forensic_matt">@forensic_matt</a>)氏による<a href="https://www.youtube.com/watch?v=7sQqz2ek-ko">Hayabusa結果をneo4jで可視化する方法</a></li>
 </ul>
@@ -1893,7 +1893,7 @@ Hayabusaルールは、Windowsのイベントログ解析専用に設計され�
 <li>2024/01/24 NECセキュリティブログ: <a href="https://jpn.nec.com/cybersecurity/blog/240126/index.html">LME × Hayabusa　－　Windowsイベントログの集約と解析の効率化</a></li>
 <li>2023/09/29 NECセキュリティブログ: <a href="https://jpn.nec.com/cybersecurity/blog/230929/index.html">HayabusaとSplunkによるファストフォレンジック効率化</a></li>
 <li>2023/09/13 FFRIセキュリティブログ: <a href="https://engineers.ffri.jp/entry/2023/09/13/130750">HayabusaによるWindowsイベントログ解析</a></li>
-<li>2023/03/14 Fukusuke Takahashi氏による<a href="doc/RustPerformance-Japanese.md">Hayabusa開発者向けRustパフォーマンスガイド</a></li>
+<li>2023/03/14 Fukusuke Takahashi氏による<a href="assets/images/RustPerformance-Japanese.md">Hayabusa開発者向けRustパフォーマンスガイド</a></li>
 <li>2022/01/22 <a href="https://qiita.com/kzzzzo2">@kzzzzo2</a>氏による<a href="https://qiita.com/kzzzzo2/items/ead8ccc77b7609143749">Hayabusa結果をElastic Stackで可視化する方法</a></li>
 <li>2021/12/31 itiB (<a href="https://twitter.com/itiB_S144">@itiB_S144</a>)氏による<a href="https://itib.hatenablog.com/entry/2021/12/31/222946">Windowsイベントログ解析ツール「Hayabusa」を使ってみる</a></li>
 <li>2021/12/27 Kazuminn (<a href="https://twitter.com/k47_um1n">@k47_um1n</a>)氏による<a href="https://kazuminkun.hatenablog.com/entry/2021/12/27/190535">Hayabusaの中身</a></li>
