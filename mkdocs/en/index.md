@@ -26,7 +26,7 @@
 
 # About Hayabusa
 
-Hayabusa is a **Windows event log fast forensics timeline generator** and **threat hunting tool** created by the [Yamato Security](https://yamatosecurity.connpass.com/) group in Japan. Hayabusa means ["peregrine falcon"](https://en.wikipedia.org/wiki/Peregrine_falcon) in Japanese and was chosen as peregrine falcons are the fastest animal in the world, great at hunting and highly trainable. It is written in [Rust](https://www.rust-lang.org/) and supports multi-threading in order to be as fast as possible. We have provided a [tool](https://github.com/Yamato-Security/hayabusa-rules/tree/main/tools/sigmac) to convert [Sigma](https://github.com/SigmaHQ/sigma) rules into Hayabusa rule format. The Sigma-compatible Hayabusa detection rules are written in YML in order to be as easily customizable and extensible as possible. Hayabusa can be run either on single running systems for live analysis, by gathering logs from single or multiple systems for offline analysis, or by running the [Hayabusa artifact](https://docs.velociraptor.app/exchange/artifacts/pages/windows.eventlogs.hayabusa/) with [Velociraptor](https://docs.velociraptor.app/) for enterprise-wide threat hunting and incident response. The output will be consolidated into a single CSV timeline for easy analysis in [LibreOffice](https://www.libreoffice.org/), [Timeline Explorer](https://ericzimmerman.github.io/#!index.md), [Elastic Stack](../../overrides/../assets/images/ElasticStackImport/ElasticStackImport-English.md), [Timesketch](https://timesketch.org/), etc...
+Hayabusa is a **Windows event log fast forensics timeline generator** and **threat hunting tool** created by the [Yamato Security](https://yamatosecurity.connpass.com/) group in Japan. Hayabusa means ["peregrine falcon"](https://en.wikipedia.org/wiki/Peregrine_falcon) in Japanese and was chosen as peregrine falcons are the fastest animal in the world, great at hunting and highly trainable. It is written in [Rust](https://www.rust-lang.org/) and supports multi-threading in order to be as fast as possible. We have provided a [tool](https://github.com/Yamato-Security/hayabusa-rules/tree/main/tools/sigmac) to convert [Sigma](https://github.com/SigmaHQ/sigma) rules into Hayabusa rule format. The Sigma-compatible Hayabusa detection rules are written in YML in order to be as easily customizable and extensible as possible. Hayabusa can be run either on single running systems for live analysis, by gathering logs from single or multiple systems for offline analysis, or by running the [Hayabusa artifact](https://docs.velociraptor.app/exchange/artifacts/pages/windows.eventlogs.hayabusa/) with [Velociraptor](https://docs.velociraptor.app/) for enterprise-wide threat hunting and incident response. The output will be consolidated into a single CSV timeline for easy analysis in [LibreOffice](https://www.libreoffice.org/), [Timeline Explorer](https://ericzimmerman.github.io/#!index.md), [Elastic Stack](../assets/images/ElasticStackImport/ElasticStackImport-English.md), [Timesketch](https://timesketch.org/), etc..
 
 # Companion Projects
 
@@ -167,71 +167,71 @@ Windows event log analysis has traditionally been a very long and tedious proces
 Hayabusa's goal is to extract out only useful data and present it in a concise as possible easy-to-read format that is usable not only by professionally trained analysts but any Windows system administrator.
 Hayabusa hopes to let analysts get 80% of their work done in 20% of the time when compared to traditional Windows event log analysis.
 
-![DFIR Timeline](../../overrides/../assets/images/DFIR-TimelineCreation-EN.png)
+![DFIR Timeline](../assets/images/DFIR-TimelineCreation-EN.png)
 
 # Screenshots
 
 ## Startup
 
-![Hayabusa Startup](../../overrides/../assets/images/Startup.png)
+![Hayabusa Startup](../assets/images/Startup.png)
 
 ## DFIR Timeline Terminal Output
 
-![Hayabusa DFIR terminal output](../../overrides/../assets/images/Results.png)
+![Hayabusa DFIR terminal output](../assets/images/Results.png)
 
 ## Keyword Search Results
 
-![Hayabusa search results](../../overrides/../assets/images/SearchResults.png)
+![Hayabusa search results](../assets/images/SearchResults.png)
 
 ## Detection Fequency Timeline (`-T` option)
 
-![Hayabusa Detection Frequency Timeline](../../overrides/../assets/images/DetectionFrequencyTimeline.png)
+![Hayabusa Detection Frequency Timeline](../assets/images/DetectionFrequencyTimeline.png)
 
 ## Results Summary
 
-![Hayabusa results summary](../../overrides/../assets/images/ResultsSummary.png)
+![Hayabusa results summary](../assets/images/ResultsSummary.png)
 
 ## HTML Results Summary (`-H` option)
 
-![Hayabusa results summary](../../overrides/../assets/images/HTML-ResultsSummary-1.png)
+![Hayabusa results summary](../assets/images/HTML-ResultsSummary-1.png)
 
-![Hayabusa results summary](../../overrides/../assets/images/HTML-ResultsSummary-2.png)
+![Hayabusa results summary](../assets/images/HTML-ResultsSummary-2.png)
 
-![Hayabusa results summary](../../overrides/../assets/images/HTML-ResultsSummary-3.png)
+![Hayabusa results summary](../assets/images/HTML-ResultsSummary-3.png)
 
 ## DFIR Timeline Analysis in LibreOffice (`-M` Multiline Output)
 
-![Hayabusa analysis in LibreOffice](../../overrides/../assets/images/DFIR-TimelineLibreOfficeMultiline.jpeg)
+![Hayabusa analysis in LibreOffice](../assets/images/DFIR-TimelineLibreOfficeMultiline.jpeg)
 
 ## DFIR Timeline Analysis in Timeline Explorer
 
-![Hayabusa analysis in Timeline Explorer](../../overrides/../assets/images/TimelineExplorer-ColoredTimeline.png)
+![Hayabusa analysis in Timeline Explorer](../assets/images/TimelineExplorer-ColoredTimeline.png)
 
 ## Critical Alert Filtering and Computer Grouping in Timeline Explorer
 
-![Critical alert filtering and computer grouping in Timeline Explorer](../../overrides/../assets/images/TimelineExplorer-CriticalAlerts-ComputerGrouping.png)
+![Critical alert filtering and computer grouping in Timeline Explorer](../assets/images/TimelineExplorer-CriticalAlerts-ComputerGrouping.png)
 
 ## Analysis with the Elastic Stack Dashboard
 
-![Elastic Stack Dashboard 1](../../overrides/../assets/images/ElasticStackImport/17-HayabusaDashboard-1.png)
+![Elastic Stack Dashboard 1](../assets/images/ElasticStackImport/17-HayabusaDashboard-1.png)
 
-![Elastic Stack Dashboard 2](../../overrides/../assets/images/ElasticStackImport/18-HayabusaDashboard-2.png)
+![Elastic Stack Dashboard 2](../assets/images/ElasticStackImport/18-HayabusaDashboard-2.png)
 
 ## Analysis in Timesketch
 
-![Timesketch](../../overrides/../assets/images/TimesketchAnalysis.png)
+![Timesketch](../assets/images/TimesketchAnalysis.png)
 
 # Importing and Analyzing Timeline Results
 
-You can learn how to analyze CSV timelines in Excel and Timeline Explorer [here](../../overrides/../assets/images/CSV-AnalysisWithExcelAndTimelineExplorer-English.pdf).
+You can learn how to analyze CSV timelines in Excel and Timeline Explorer [here](../assets/images/CSV-AnalysisWithExcelAndTimelineExplorer-English.pdf).
 
-You can learn how to import CSV files into Elastic Stack [here](../../overrides/../assets/images/ElasticStackImport/ElasticStackImport-English.md).
+You can learn how to import CSV files into Elastic Stack [here](../assets/images/ElasticStackImport/ElasticStackImport-English.md).
 
-You can learn how to import CSV files into Timesketch [here](../../overrides/../assets/images/TimesketchImport/TimesketchImport-English.md).
+You can learn how to import CSV files into Timesketch [here](../assets/images/TimesketchImport/TimesketchImport-English.md).
 
 # Analyzing JSON-formatted results with JQ
 
-You can learn how to analyze JSON-formatted results with `jq` [here](../../overrides/../assets/images/AnalysisWithJQ-English.md).
+You can learn how to analyze JSON-formatted results with `jq` [here](../assets/images/AnalysisWithJQ-English.md).
 
 # Features
 
@@ -247,7 +247,7 @@ You can learn how to analyze JSON-formatted results with `jq` [here](../../overr
 * Rule tuning configuration by excluding unneeded or noisy rules.
 * MITRE ATT&CK mapping of tactics.
 * Rule level tuning.
-* Create a list of unique pivot keywords to quickly identify abnormal users, hostnames, processes, etc... as well as correlate events.
+* Create a list of unique pivot keywords to quickly identify abnormal users, hostnames, processes, etc.. as well as correlate events.
 * Output all fields for more thorough investigations.
 * Successful and failed logon summary.
 * Enterprise-wide threat hunting and DFIR on all endpoints with [Velociraptor](https://docs.velociraptor.app/).
@@ -259,8 +259,8 @@ You can learn how to analyze JSON-formatted results with `jq` [here](../../overr
 * Search all events for keywords or regular expressions.
 * Field data mapping. (Ex: `0xc0000234` -> `ACCOUNT LOCKED`)
 * Evtx record carving from evtx slack space.
-* Event de-duplication when outputting. (Useful when recovery records is enabled or when you include backed up evtx files, evtx files from VSS, etc...)
-* Scan setting wizard to help choose which rules to enable easier. (In order to reduce false positives, etc...)
+* Event de-duplication when outputting. (Useful when recovery records is enabled or when you include backed up evtx files, evtx files from VSS, etc..)
+* Scan setting wizard to help choose which rules to enable easier. (In order to reduce false positives, etc..)
 * PowerShell classic log field parsing and extraction.
 
 # Downloads
@@ -478,11 +478,11 @@ Then, try to run it from the Hayabusa root directory:
 
 On the latest version of macOS, you may receive the following security error when you try to run it:
 
-![Mac Error 1 EN](../../overrides/../assets/images/MacOS-RunError-1-EN.png)
+![Mac Error 1 EN](../assets/images/MacOS-RunError-1-EN.png)
 
 Click "Cancel" and then from System Preferences, open "Security & Privacy" and from the General tab, click "Allow Anyway".
 
-![Mac Error 2 EN](../../overrides/../assets/images/MacOS-RunError-2-EN.png)
+![Mac Error 2 EN](../assets/images/MacOS-RunError-2-EN.png)
 
 After that, try to run it again.
 
@@ -492,7 +492,7 @@ After that, try to run it again.
 
 The following warning will pop up, so please click "Open".
 
-![Mac Error 3 EN](../../overrides/../assets/images/MacOS-RunError-3-EN.png)
+![Mac Error 3 EN](../assets/images/MacOS-RunError-3-EN.png)
 
 You should now be able to run hayabusa.
 
@@ -556,7 +556,7 @@ General Options:
   -C, --clobber                        Overwrite files when saving
   -Q, --quiet-errors                   Quiet errors mode: do not save error logs
   -c, --rules-config <DIR>             Specify custom rule config directory (default: ./rules/config)
-      --target-file-ext <FILE-EXT...>  Specify additional evtx file extensions (ex: evtx_data)
+      --target-file-ext <FILE-EXT..>  Specify additional evtx file extensions (ex: evtx_data)
   -t, --threads <NUMBER>               Number of threads (default: optimal number for performance)
 ```
 
@@ -567,7 +567,7 @@ General Options:
 
 #### `computer-metrics` screenshot
 
-![computer-metrics screenshot](../../overrides/../assets/images/ComputerMetrics.png)
+![computer-metrics screenshot](../assets/images/ComputerMetrics.png)
 
 ### `eid-metrics` command
 
@@ -585,8 +585,8 @@ Input:
   -x, --recover-records  Carve evtx records from slack space (default: disabled)
 
 Filtering:
-      --exclude-computer <COMPUTER...>  Do not scan specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
-      --include-computer <COMPUTER...>  Scan only specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
+      --exclude-computer <COMPUTER..>  Do not scan specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
+      --include-computer <COMPUTER..>  Scan only specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
       --timeline-offset <OFFSET>        Scan recent events based on an offset (ex: 1y, 3M, 30d, 24h, 30m)
 
 Output:
@@ -601,7 +601,7 @@ General Options:
   -C, --clobber                        Overwrite files when saving
   -Q, --quiet-errors                   Quiet errors mode: do not save error logs
   -c, --rules-config <DIR>             Specify custom rule config directory (default: ./rules/config)
-      --target-file-ext <FILE-EXT...>  Specify additional evtx file extensions (ex: evtx_data)
+      --target-file-ext <FILE-EXT..>  Specify additional evtx file extensions (ex: evtx_data)
   -t, --threads <NUMBER>               Number of threads (default: optimal number for performance)
 
 Time Format:
@@ -635,7 +635,7 @@ Microsoft-Windows-Sysmon/Operational,4,Sysmon Service State Changed.
 
 #### `eid-metrics` screenshot
 
-![eid-metrics screenshot](../../overrides/../assets/images/EID-Metrics.png)
+![eid-metrics screenshot](../assets/images/EID-Metrics.png)
 
 ### `logon-summary` command
 
@@ -653,8 +653,8 @@ Input:
   -x, --recover-records  Carve evtx records from slack space (default: disabled)
 
 Filtering:
-      --exclude-computer <COMPUTER...>  Do not scan specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
-      --include-computer <COMPUTER...>  Scan only specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
+      --exclude-computer <COMPUTER..>  Do not scan specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
+      --include-computer <COMPUTER..>  Scan only specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
       --timeline-end <DATE>             End time of the event logs to load (ex: "2022-02-22 23:59:59 +09:00")
       --timeline-offset <OFFSET>        Scan recent events based on an offset (ex: 1y, 3M, 30d, 24h, 30m)
       --timeline-start <DATE>           Start time of the event logs to load (ex: "2020-02-22 00:00:00 +09:00")
@@ -671,7 +671,7 @@ General Options:
   -C, --clobber                        Overwrite files when saving
   -Q, --quiet-errors                   Quiet errors mode: do not save error logs
   -c, --rules-config <DIR>             Specify custom rule config directory (default: ./rules/config)
-      --target-file-ext <FILE-EXT...>  Specify additional evtx file extensions (ex: evtx_data)
+      --target-file-ext <FILE-EXT..>  Specify additional evtx file extensions (ex: evtx_data)
   -t, --threads <NUMBER>               Number of threads (default: optimal number for performance)
 
 Time Format:
@@ -691,16 +691,16 @@ Time Format:
 
 #### `logon-summary` screenshots
 
-![logon-summary successful logons screenshot](../../overrides/../assets/images/LogonSummarySuccessfulLogons.png)
+![logon-summary successful logons screenshot](../assets/images/LogonSummarySuccessfulLogons.png)
 
-![logon-summary failed logons screenshot](../../overrides/../assets/images/LogonSummaryFailedLogons.png)
+![logon-summary failed logons screenshot](../assets/images/LogonSummaryFailedLogons.png)
 
 ### `pivot-keywords-list` command
 
-You can use the `pivot-keywords-list` command to create a list of unique pivot keywords to quickly identify abnormal users, hostnames, processes, etc... as well as correlate events.
+You can use the `pivot-keywords-list` command to create a list of unique pivot keywords to quickly identify abnormal users, hostnames, processes, etc.. as well as correlate events.
 
 Important: by default, hayabusa will return results from all events (informational and higher) so we highly recommend combining the `pivot-keywords-list` command with the `-m, --min-level` option.
-For example, start off with only creating keywords from `critical` alerts with `-m critical` and then continue with `-m high`, `-m medium`, etc...
+For example, start off with only creating keywords from `critical` alerts with `-m critical` and then continue with `-m high`, `-m medium`, etc..
 There will most likely be common keywords in your results that will match on many normal events, so after manually checking the results and creating a list of unique keywords in a single file, you can then create a narrowed down timeline of suspicious activity with a command like `grep -f keywords.txt timeline.csv`.
 
 ```
@@ -719,13 +719,13 @@ Filtering:
   -n, --enable-noisy-rules              Enable rules set to noisy (./rules/config/noisy_rules.txt)
   -u, --enable-unsupported-rules        Enable rules with a status of unsupported
   -e, --exact-level <LEVEL>             Only load rules with a specific level (informational, low, medium, high, critical)
-      --exclude-computer <COMPUTER...>  Do not scan specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
-      --exclude-eid <EID...>            Do not scan specific EIDs for faster speed (ex: 1) (ex: 1,4688)
-      --exclude-status <STATUS...>      Do not load rules according to status (ex: experimental) (ex: stable,test)
-      --exclude-tag <TAG...>            Do not load rules with specific tags (ex: sysmon)
-      --include-computer <COMPUTER...>  Scan only specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
-      --include-eid <EID...>            Scan only specified EIDs for faster speed (ex: 1) (ex: 1,4688)
-      --include-tag <TAG...>            Only load rules with specific tags (ex: attack.execution,attack.discovery)
+      --exclude-computer <COMPUTER..>  Do not scan specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
+      --exclude-eid <EID..>            Do not scan specific EIDs for faster speed (ex: 1) (ex: 1,4688)
+      --exclude-status <STATUS..>      Do not load rules according to status (ex: experimental) (ex: stable,test)
+      --exclude-tag <TAG..>            Do not load rules with specific tags (ex: sysmon)
+      --include-computer <COMPUTER..>  Scan only specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
+      --include-eid <EID..>            Scan only specified EIDs for faster speed (ex: 1) (ex: 1,4688)
+      --include-tag <TAG..>            Only load rules with specific tags (ex: attack.execution,attack.discovery)
   -m, --min-level <LEVEL>               Minimum level for rules to load (default: informational)
       --timeline-end <DATE>             End time of the event logs to load (ex: "2022-02-22 23:59:59 +09:00")
       --timeline-offset <OFFSET>        Scan recent events based on an offset (ex: 1y, 3M, 30d, 24h, 30m)
@@ -743,14 +743,14 @@ General Options:
   -C, --clobber                        Overwrite files when saving
   -Q, --quiet-errors                   Quiet errors mode: do not save error logs
   -c, --rules-config <DIR>             Specify custom rule config directory (default: ./rules/config)
-      --target-file-ext <FILE-EXT...>  Specify additional evtx file extensions (ex: evtx_data)
+      --target-file-ext <FILE-EXT..>  Specify additional evtx file extensions (ex: evtx_data)
   -t, --threads <NUMBER>               Number of threads (default: optimal number for performance)
 ```
 
 #### `pivot-keywords-list` command examples
 
 * Output pivot keywords to screen: `hayabusa.exe pivot-keywords-list -d ../logs -m critical`
-* Create a list of pivot keywords from critical alerts and save the results. (Results will be saved to `keywords-Ip Addresses.txt`, `keywords-Users.txt`, etc...):
+* Create a list of pivot keywords from critical alerts and save the results. (Results will be saved to `keywords-Ip Addresses.txt`, `keywords-Users.txt`, etc..):
 
 ```
 hayabusa.exe pivot-keywords-list -d ../logs -m critical -o keywords`
@@ -787,9 +787,9 @@ Input:
 
 Filtering:
   -a, --and-logic                 Search keywords with AND logic (default: OR)
-  -F, --filter <FILTER...>        Filter by specific field(s)
+  -F, --filter <FILTER..>        Filter by specific field(s)
   -i, --ignore-case               Case-insensitive keyword search
-  -k, --keyword <KEYWORD...>      Search by keyword(s)
+  -k, --keyword <KEYWORD..>      Search by keyword(s)
   -r, --regex <REGEX>             Search by regular expression
       --timeline-offset <OFFSET>  Scan recent events based on an offset (ex: 1y, 3M, 30d, 24h, 30m)
 
@@ -803,7 +803,7 @@ General Options:
   -C, --clobber                        Overwrite files when saving
   -Q, --quiet-errors                   Quiet errors mode: do not save error logs
   -c, --rules-config <DIR>             Specify custom rule config directory (default: ./rules/config)
-      --target-file-ext <FILE-EXT...>  Specify additional evtx file extensions (ex: evtx_data)
+      --target-file-ext <FILE-EXT..>  Specify additional evtx file extensions (ex: evtx_data)
   -t, --threads <NUMBER>               Number of threads (default: optimal number for performance)
 
 Time Format:
@@ -879,15 +879,15 @@ Filtering:
   -n, --enable-noisy-rules              Enable rules set to noisy (./rules/config/noisy_rules.txt)
   -u, --enable-unsupported-rules        Enable rules with a status of unsupported
   -e, --exact-level <LEVEL>             Only load rules with a specific level (informational, low, medium, high, critical)
-      --exclude-category <CATEGORY...>  Do not load rules with specified logsource categories (ex: process_creation,pipe_created)
-      --exclude-computer <COMPUTER...>  Do not scan specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
-      --exclude-eid <EID...>            Do not scan specific EIDs for faster speed (ex: 1) (ex: 1,4688)
-      --exclude-status <STATUS...>      Do not load rules according to status (ex: experimental) (ex: stable,test)
-      --exclude-tag <TAG...>            Do not load rules with specific tags (ex: sysmon)
-      --include-category <CATEGORY...>  Only load rules with specified logsource categories (ex: process_creation,pipe_created)
-      --include-computer <COMPUTER...>  Scan only specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
-      --include-eid <EID...>            Scan only specified EIDs for faster speed (ex: 1) (ex: 1,4688)
-      --include-tag <TAG...>            Only load rules with specific tags (ex: attack.execution,attack.discovery)
+      --exclude-category <CATEGORY..>  Do not load rules with specified logsource categories (ex: process_creation,pipe_created)
+      --exclude-computer <COMPUTER..>  Do not scan specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
+      --exclude-eid <EID..>            Do not scan specific EIDs for faster speed (ex: 1) (ex: 1,4688)
+      --exclude-status <STATUS..>      Do not load rules according to status (ex: experimental) (ex: stable,test)
+      --exclude-tag <TAG..>            Do not load rules with specific tags (ex: sysmon)
+      --include-category <CATEGORY..>  Only load rules with specified logsource categories (ex: process_creation,pipe_created)
+      --include-computer <COMPUTER..>  Scan only specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
+      --include-eid <EID..>            Scan only specified EIDs for faster speed (ex: 1) (ex: 1,4688)
+      --include-tag <TAG..>            Only load rules with specific tags (ex: attack.execution,attack.discovery)
   -m, --min-level <LEVEL>               Minimum level for rules to load (default: informational)
   -P, --proven-rules                    Scan with only proven rules for faster speed (./rules/config/proven_rules.txt)
       --timeline-end <DATE>             End time of the event logs to load (ex: "2022-02-22 23:59:59 +09:00")
@@ -918,7 +918,7 @@ General Options:
   -Q, --quiet-errors                   Quiet errors mode: do not save error logs
   -r, --rules <DIR/FILE>               Specify a custom rule directory or file (default: ./rules)
   -c, --rules-config <DIR>             Specify custom rule config directory (default: ./rules/config)
-      --target-file-ext <FILE-EXT...>  Specify additional evtx file extensions (ex: evtx_data)
+      --target-file-ext <FILE-EXT..>  Specify additional evtx file extensions (ex: evtx_data)
   -t, --threads <NUMBER>               Number of threads (default: optimal number for performance)
 
 Time Format:
@@ -945,7 +945,7 @@ hayabusa.exe csv-timeline -f eventlog.evtx
 hayabusa.exe csv-timeline -d .\hayabusa-sample-evtx -p verbose
 ```
 
-* Export to a single CSV file for further analysis with LibreOffice, Timeline Explorer, Elastic Stack, etc... and include all field information (Warning: your file output size will become much larger with the `super-verbose` profile!):
+* Export to a single CSV file for further analysis with LibreOffice, Timeline Explorer, Elastic Stack, etc.. and include all field information (Warning: your file output size will become much larger with the `super-verbose` profile!):
 
 ```
 hayabusa.exe csv-timeline -d .\hayabusa-sample-evtx -o results.csv -p super-verbose
@@ -1004,7 +1004,7 @@ hayabusa.exe csv-timeline -d .\hayabusa-sample-evtx -r .\rules\hayabusa\builtin\
 hayabusa.exe csv-timeline -l -m low
 ```
 
-* Print verbose information (useful for determining which files take long to process, parsing errors, etc...):
+* Print verbose information (useful for determining which files take long to process, parsing errors, etc..):
 
 ```
 hayabusa.exe csv-timeline -d .\hayabusa-sample-evtx -v
@@ -1058,8 +1058,8 @@ Steps:
 * When `csv-timeline` is used, the following 6 columns will be additionally outputted: `SrcASN`, `SrcCity`, `SrcCountry`, `TgtASN`, `TgtCity`, `TgtCountry`.
 * When `json-timeline` is used, the same `SrcASN`, `SrcCity`, `SrcCountry`, `TgtASN`, `TgtCity`, `TgtCountry` fields will be added to the `Details` object, but only if they contain information.
 
-* When `SrcIP` or `TgtIP` is localhost (`127.0.0.1`, `::1`, etc...), `SrcASN` or `TgtASN` will be outputted as `Local`.
-* When `SrcIP` or `TgtIP` is a private IP address (`10.0.0.0/8`, `fe80::/10`, etc...), `SrcASN` or `TgtASN` will be outputted as `Private`.
+* When `SrcIP` or `TgtIP` is localhost (`127.0.0.1`, `::1`, etc..), `SrcASN` or `TgtASN` will be outputted as `Local`.
+* When `SrcIP` or `TgtIP` is a private IP address (`10.0.0.0/8`, `fe80::/10`, etc..), `SrcASN` or `TgtASN` will be outputted as `Private`.
 
 ##### GeoIP config file
 
@@ -1121,7 +1121,7 @@ Outputting to JSONL will be faster and smaller file size than JSON so is good if
 JSON is better if you are going to manually analyze the results with a text editor.
 CSV output is good for importing smaller timelines (usually less than 2GB) into tools like LibreOffice or Timeline Explorer.
 JSON is best for more detailed analysis of data (including large results files) with tools like `jq` as the `Details` fields are separated for easier analysis.
-(In the CSV output, all of the event log fields are in one big `Details` column making sorting of data, etc... more difficult.)
+(In the CSV output, all of the event log fields are in one big `Details` column making sorting of data, etc.. more difficult.)
 
 ```
 Usage: json-timeline <INPUT> [OPTIONS]
@@ -1139,15 +1139,15 @@ Filtering:
   -n, --enable-noisy-rules              Enable rules set to noisy (./rules/config/noisy_rules.txt)
   -u, --enable-unsupported-rules        Enable rules with a status of unsupported
   -e, --exact-level <LEVEL>             Only load rules with a specific level (informational, low, medium, high, critical)
-      --exclude-category <CATEGORY...>  Do not load rules with specified logsource categories (ex: process_creation,pipe_created)
-      --exclude-computer <COMPUTER...>  Do not scan specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
-      --exclude-eid <EID...>            Do not scan specific EIDs for faster speed (ex: 1) (ex: 1,4688)
-      --exclude-status <STATUS...>      Do not load rules according to status (ex: experimental) (ex: stable,test)
-      --exclude-tag <TAG...>            Do not load rules with specific tags (ex: sysmon)
-      --include-category <CATEGORY...>  Only load rules with specified logsource categories (ex: process_creation,pipe_created)
-      --include-computer <COMPUTER...>  Scan only specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
-      --include-eid <EID...>            Scan only specified EIDs for faster speed (ex: 1) (ex: 1,4688)
-      --include-tag <TAG...>            Only load rules with specific tags (ex: attack.execution,attack.discovery)
+      --exclude-category <CATEGORY..>  Do not load rules with specified logsource categories (ex: process_creation,pipe_created)
+      --exclude-computer <COMPUTER..>  Do not scan specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
+      --exclude-eid <EID..>            Do not scan specific EIDs for faster speed (ex: 1) (ex: 1,4688)
+      --exclude-status <STATUS..>      Do not load rules according to status (ex: experimental) (ex: stable,test)
+      --exclude-tag <TAG..>            Do not load rules with specific tags (ex: sysmon)
+      --include-category <CATEGORY..>  Only load rules with specified logsource categories (ex: process_creation,pipe_created)
+      --include-computer <COMPUTER..>  Scan only specified computer names (ex: ComputerA) (ex: ComputerA,ComputerB)
+      --include-eid <EID..>            Scan only specified EIDs for faster speed (ex: 1) (ex: 1,4688)
+      --include-tag <TAG..>            Only load rules with specific tags (ex: attack.execution,attack.discovery)
   -m, --min-level <LEVEL>               Minimum level for rules to load (default: informational)
   -P, --proven-rules                    Scan with only proven rules for faster speed (./rules/config/proven_rules.txt)
       --timeline-end <DATE>             End time of the event logs to load (ex: "2022-02-22 23:59:59 +09:00")
@@ -1178,7 +1178,7 @@ General Options:
   -Q, --quiet-errors                   Quiet errors mode: do not save error logs
   -r, --rules <DIR/FILE>               Specify a custom rule directory or file (default: ./rules)
   -c, --rules-config <DIR>             Specify custom rule config directory (default: ./rules/config)
-      --target-file-ext <FILE-EXT...>  Specify additional evtx file extensions (ex: evtx_data)
+      --target-file-ext <FILE-EXT..>  Specify additional evtx file extensions (ex: evtx_data)
   -t, --threads <NUMBER>               Number of threads (default: optimal number for performance)
 
 Time Format:
@@ -1358,12 +1358,12 @@ The following information can be outputted with built-in output profiles:
 |%AllFieldInfo% | All field information. |
 |%Channel% | The name of log. `<Event><System><Channel>` field. |
 |%Computer% | The `<Event><System><Computer>` field. |
-|%Details% | The `details` field in the YML detection rule, however, only hayabusa rules have this field. This field gives extra information about the alert or event and can extract useful data from the fields in event logs. For example, usernames, command line information, process information, etc... When a placeholder points to a field that does not exist or there is an incorrect alias mapping, it will be outputted as `n/a` (not available). If the `details` field is not specified (i.e. sigma rules), default `details` messages to extract fields defined in `./rules/config/default_details.txt` will be outputted. You can add more default `details` messages by adding the `Provider Name`, `EventID` and `details` message you want to output in `default_details.txt`. When no `details` field is defined in a rule nor in `default_details.txt`, all fields will be outputted to the `details` column. |
+|%Details% | The `details` field in the YML detection rule, however, only hayabusa rules have this field. This field gives extra information about the alert or event and can extract useful data from the fields in event logs. For example, usernames, command line information, process information, etc.. When a placeholder points to a field that does not exist or there is an incorrect alias mapping, it will be outputted as `n/a` (not available). If the `details` field is not specified (i.e. sigma rules), default `details` messages to extract fields defined in `./rules/config/default_details.txt` will be outputted. You can add more default `details` messages by adding the `Provider Name`, `EventID` and `details` message you want to output in `default_details.txt`. When no `details` field is defined in a rule nor in `default_details.txt`, all fields will be outputted to the `details` column. |
 |%ExtraFieldInfo% | Print the field information that was not outputted in %Details%. |
 |%EventID% | The `<Event><System><EventID>` field. |
 |%EvtxFile% | The evtx filename that caused the alert or event. |
 |%Level% | The `level` field in the YML detection rule. (`informational`, `low`, `medium`, `high`, `critical`) |
-|%MitreTactics% | MITRE ATT&CK [tactics](https://attack.mitre.org/tactics/enterprise/) (Ex: Initial Access, Lateral Movement, etc...). |
+|%MitreTactics% | MITRE ATT&CK [tactics](https://attack.mitre.org/tactics/enterprise/) (Ex: Initial Access, Lateral Movement, etc..). |
 |%MitreTags% | MITRE ATT&CK Group ID, Technique ID and Software ID. |
 |%OtherTags% | Any keyword in the `tags` field in a YML detection rule which is not included in `MitreTactics` or `MitreTags`. |
 |%Provider% | The `Name` attribute in `<Event><System><Provider>` field. |
@@ -1533,7 +1533,7 @@ Total events, the number of events with hits, data reduction metrics, total and 
 ### Detection Fequency Timeline
 
 If you add the `-T, --visualize-timeline` option, the Event Frequency Timeline feature displays a sparkline frequency timeline of detected events.
-Note: There needs to be more than 5 events. Also, the characters will not render correctly on the default Command Prompt or PowerShell Prompt, so please use a terminal like Windows Terminal, iTerm2, etc...
+Note: There needs to be more than 5 events. Also, the characters will not render correctly on the default Command Prompt or PowerShell Prompt, so please use a terminal like Windows Terminal, iTerm2, etc..
 
 # Hayabusa Rules
 
@@ -1550,7 +1550,7 @@ The hayabusa rule directory structure is separated into 2 directories:
 * `builtin`: logs that can be generated by Windows built-in functionality.
 * `sysmon`: logs that are generated by [sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon).
 
-Rules are further seperated into directories by log type (Example: Security, System, etc...) and are named in the following format:
+Rules are further seperated into directories by log type (Example: Security, System, etc..) and are named in the following format:
 
 Please check out the current rules to use as a template in creating new ones or for checking the detection logic.
 
@@ -1626,7 +1626,7 @@ To create the most forensic evidence and detect with the highest accuracy, you n
 * 2023/12/11 [Unleashing the Hayabusa Feathers: My Top Features Revealed!](https://detect.fyi/hunting-with-hayabusa-tool-showcase-aafef7434413) by Christian Henriksen
 * 2023/10/16 [Incident response and threat hunting using hayabusa tool](https://mahim-firoj.medium.com/incident-response-and-threat-hunting-using-hayabusa-tool-383da273183a) by Md. Mahim Bin Firoj
 * 2023/03/21 [Find Threats in Event Logs with Hayabusa](https://blog.ecapuano.com/p/find-threats-in-event-logs-with-hayabusa) by [Eric Capuano](https://twitter.com/eric_capuano)
-* 2023/03/14 [Rust Performance Guide for Hayabusa Developers](../../overrides/../assets/images/RustPerformance-English.md) by Fukusuke Takahashi
+* 2023/03/14 [Rust Performance Guide for Hayabusa Developers](../assets/images/RustPerformance-English.md) by Fukusuke Takahashi
 * 2022/06/19 [Velociraptor Walkthrough and Hayabusa Integration](https://www.youtube.com/watch?v=Q1IoGX--814) by [Eric Capuano](https://twitter.com/eric_capuano)
 * 2022/01/24 [Graphing Hayabusa results in neo4j](https://www.youtube.com/watch?v=7sQqz2ek-ko) by Matthew Seyer ([@forensic_matt](https://twitter.com/forensic_matt))
 
@@ -1635,7 +1635,7 @@ To create the most forensic evidence and detect with the highest accuracy, you n
 * 2024/01/24 [LME × Hayabusa　－　Windowsイベントログの集約と解析の効率化](https://jpn.nec.com/cybersecurity/blog/240126/index.html) by NEC Security Blog
 * 2023/09/29 [Fast Forensics with Hayabusa and Splunk](https://jpn.nec.com/cybersecurity/blog/230929/index.html) by NEC Security Blog
 * 2023/09/13 [Windows Event Log Analysis with Hayabusa](https://engineers.ffri.jp/entry/2023/09/13/130750) by FFRI
-* 2022/03/14 [Rust Performance Guide for Hayabusa Developers](../../overrides/../assets/images/RustPerformance-Japanese.md) by Fukusuke Takahashi
+* 2022/03/14 [Rust Performance Guide for Hayabusa Developers](../assets/images/RustPerformance-Japanese.md) by Fukusuke Takahashi
 * 2022/01/22 [Visualizing Hayabusa results in Elastic Stack](https://qiita.com/kzzzzo2/items/ead8ccc77b7609143749) by [@kzzzzo2](https://qiita.com/kzzzzo2)
 * 2021/12/31 [Intro to Hayabusa](https://itib.hatenablog.com/entry/2021/12/31/222946) by itiB ([@itiB_S144](https://twitter.com/itiB_S144))
 * 2021/12/27 [Hayabusa internals](https://kazuminkun.hatenablog.com/entry/2021/12/27/190535) by Kazuminn ([@k47_um1n](https://twitter.com/k47_um1n))
@@ -1643,7 +1643,7 @@ To create the most forensic evidence and detect with the highest accuracy, you n
 # Contribution
 
 We would love any form of contribution.
-Pull requests, rule creation and sample evtx logs are the best but feature requests, notifying us of bugs, etc... are also very welcome.
+Pull requests, rule creation and sample evtx logs are the best but feature requests, notifying us of bugs, etc.. are also very welcome.
 
 At the least, if you like our tool then please give us a star on GitHub and show your support!
 
@@ -1652,9 +1652,9 @@ At the least, if you like our tool then please give us a star on GitHub and show
 Please submit any bugs you find [here.](https://github.com/Yamato-Security/hayabusa/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D)
 This project is currently actively maintained and we are happy to fix any bugs reported.
 
-If you find any issues (false positives, bugs, etc...) with Hayabusa rules, please report them to the hayabusa-rules GitHub issues page [here](https://github.com/Yamato-Security/hayabusa-rules/issues/new).
+If you find any issues (false positives, bugs, etc..) with Hayabusa rules, please report them to the hayabusa-rules GitHub issues page [here](https://github.com/Yamato-Security/hayabusa-rules/issues/new).
 
-If you find any issues (false positives, bugs, etc...) with Sigma rules, please report them to the upstream SigmaHQ GitHub issues page [here](https://github.com/SigmaHQ/sigma/issues).
+If you find any issues (false positives, bugs, etc..) with Sigma rules, please report them to the upstream SigmaHQ GitHub issues page [here](https://github.com/SigmaHQ/sigma/issues).
 
 # License
 
@@ -1664,4 +1664,4 @@ Hayabusa uses GeoLite2 data created by MaxMind, available from [https://www.maxm
 
 # Twitter
 
-You can recieve the latest news about Hayabusa, rule updates, other Yamato Security tools, etc... by following us on Twitter at [@SecurityYamato](https://twitter.com/SecurityYamato).
+You can recieve the latest news about Hayabusa, rule updates, other Yamato Security tools, etc.. by following us on Twitter at [@SecurityYamato](https://twitter.com/SecurityYamato).
