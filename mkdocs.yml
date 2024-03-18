@@ -10,7 +10,7 @@ site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn"
 
 theme:
   name: "material"
-  logo: "assets/images/favicon.png"
+  favicon: "assets/images/favicon.png"
   icon:
     repo: fontawesome/brands/github
   palette:

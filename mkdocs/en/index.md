@@ -26,7 +26,7 @@
 
 # About Hayabusa
 
-Hayabusa is a **Windows event log fast forensics timeline generator** and **threat hunting tool** created by the [Yamato Security](https://yamatosecurity.connpass.com/) group in Japan. Hayabusa means ["peregrine falcon"](https://en.wikipedia.org/wiki/Peregrine_falcon) in Japanese and was chosen as peregrine falcons are the fastest animal in the world, great at hunting and highly trainable. It is written in [Rust](https://www.rust-lang.org/) and supports multi-threading in order to be as fast as possible. We have provided a [tool](https://github.com/Yamato-Security/hayabusa-rules/tree/main/tools/sigmac) to convert [Sigma](https://github.com/SigmaHQ/sigma) rules into Hayabusa rule format. The Sigma-compatible Hayabusa detection rules are written in YML in order to be as easily customizable and extensible as possible. Hayabusa can be run either on single running systems for live analysis, by gathering logs from single or multiple systems for offline analysis, or by running the [Hayabusa artifact](https://docs.velociraptor.app/exchange/artifacts/pages/windows.eventlogs.hayabusa/) with [Velociraptor](https://docs.velociraptor.app/) for enterprise-wide threat hunting and incident response. The output will be consolidated into a single CSV timeline for easy analysis in [LibreOffice](https://www.libreoffice.org/), [Timeline Explorer](https://ericzimmerman.github.io/#!index.md), [Elastic Stack](../../overrides/assets/images/ElasticStackImport/ElasticStackImport-English.md), [Timesketch](https://timesketch.org/), etc...
+Hayabusa is a **Windows event log fast forensics timeline generator** and **threat hunting tool** created by the [Yamato Security](https://yamatosecurity.connpass.com/) group in Japan. Hayabusa means ["peregrine falcon"](https://en.wikipedia.org/wiki/Peregrine_falcon) in Japanese and was chosen as peregrine falcons are the fastest animal in the world, great at hunting and highly trainable. It is written in [Rust](https://www.rust-lang.org/) and supports multi-threading in order to be as fast as possible. We have provided a [tool](https://github.com/Yamato-Security/hayabusa-rules/tree/main/tools/sigmac) to convert [Sigma](https://github.com/SigmaHQ/sigma) rules into Hayabusa rule format. The Sigma-compatible Hayabusa detection rules are written in YML in order to be as easily customizable and extensible as possible. Hayabusa can be run either on single running systems for live analysis, by gathering logs from single or multiple systems for offline analysis, or by running the [Hayabusa artifact](https://docs.velociraptor.app/exchange/artifacts/pages/windows.eventlogs.hayabusa/) with [Velociraptor](https://docs.velociraptor.app/) for enterprise-wide threat hunting and incident response. The output will be consolidated into a single CSV timeline for easy analysis in [LibreOffice](https://www.libreoffice.org/), [Timeline Explorer](https://ericzimmerman.github.io/#!index.md), [Elastic Stack](../../overrides/../assets/images/ElasticStackImport/ElasticStackImport-English.md), [Timesketch](https://timesketch.org/), etc...
 
 # Companion Projects
 
@@ -167,71 +167,71 @@ Windows event log analysis has traditionally been a very long and tedious proces
 Hayabusa's goal is to extract out only useful data and present it in a concise as possible easy-to-read format that is usable not only by professionally trained analysts but any Windows system administrator.
 Hayabusa hopes to let analysts get 80% of their work done in 20% of the time when compared to traditional Windows event log analysis.
 
-![DFIR Timeline](../../overrides/assets/images/DFIR-TimelineCreation-EN.png)
+![DFIR Timeline](../../overrides/../assets/images/DFIR-TimelineCreation-EN.png)
 
 # Screenshots
 
 ## Startup
 
-![Hayabusa Startup](../../overrides/assets/images/Startup.png)
+![Hayabusa Startup](../../overrides/../assets/images/Startup.png)
 
 ## DFIR Timeline Terminal Output
 
-![Hayabusa DFIR terminal output](../../overrides/assets/images/Results.png)
+![Hayabusa DFIR terminal output](../../overrides/../assets/images/Results.png)
 
 ## Keyword Search Results
 
-![Hayabusa search results](../../overrides/assets/images/SearchResults.png)
+![Hayabusa search results](../../overrides/../assets/images/SearchResults.png)
 
 ## Detection Fequency Timeline (`-T` option)
 
-![Hayabusa Detection Frequency Timeline](../../overrides/assets/images/DetectionFrequencyTimeline.png)
+![Hayabusa Detection Frequency Timeline](../../overrides/../assets/images/DetectionFrequencyTimeline.png)
 
 ## Results Summary
 
-![Hayabusa results summary](../../overrides/assets/images/ResultsSummary.png)
+![Hayabusa results summary](../../overrides/../assets/images/ResultsSummary.png)
 
 ## HTML Results Summary (`-H` option)
 
-![Hayabusa results summary](../../overrides/assets/images/HTML-ResultsSummary-1.png)
+![Hayabusa results summary](../../overrides/../assets/images/HTML-ResultsSummary-1.png)
 
-![Hayabusa results summary](../../overrides/assets/images/HTML-ResultsSummary-2.png)
+![Hayabusa results summary](../../overrides/../assets/images/HTML-ResultsSummary-2.png)
 
-![Hayabusa results summary](../../overrides/assets/images/HTML-ResultsSummary-3.png)
+![Hayabusa results summary](../../overrides/../assets/images/HTML-ResultsSummary-3.png)
 
 ## DFIR Timeline Analysis in LibreOffice (`-M` Multiline Output)
 
-![Hayabusa analysis in LibreOffice](../../overrides/assets/images/DFIR-TimelineLibreOfficeMultiline.jpeg)
+![Hayabusa analysis in LibreOffice](../../overrides/../assets/images/DFIR-TimelineLibreOfficeMultiline.jpeg)
 
 ## DFIR Timeline Analysis in Timeline Explorer
 
-![Hayabusa analysis in Timeline Explorer](../../overrides/assets/images/TimelineExplorer-ColoredTimeline.png)
+![Hayabusa analysis in Timeline Explorer](../../overrides/../assets/images/TimelineExplorer-ColoredTimeline.png)
 
 ## Critical Alert Filtering and Computer Grouping in Timeline Explorer
 
-![Critical alert filtering and computer grouping in Timeline Explorer](../../overrides/assets/images/TimelineExplorer-CriticalAlerts-ComputerGrouping.png)
+![Critical alert filtering and computer grouping in Timeline Explorer](../../overrides/../assets/images/TimelineExplorer-CriticalAlerts-ComputerGrouping.png)
 
 ## Analysis with the Elastic Stack Dashboard
 
-![Elastic Stack Dashboard 1](../../overrides/assets/images/ElasticStackImport/17-HayabusaDashboard-1.png)
+![Elastic Stack Dashboard 1](../../overrides/../assets/images/ElasticStackImport/17-HayabusaDashboard-1.png)
 
-![Elastic Stack Dashboard 2](../../overrides/assets/images/ElasticStackImport/18-HayabusaDashboard-2.png)
+![Elastic Stack Dashboard 2](../../overrides/../assets/images/ElasticStackImport/18-HayabusaDashboard-2.png)
 
 ## Analysis in Timesketch
 
-![Timesketch](../../overrides/assets/images/TimesketchAnalysis.png)
+![Timesketch](../../overrides/../assets/images/TimesketchAnalysis.png)
 
 # Importing and Analyzing Timeline Results
 
-You can learn how to analyze CSV timelines in Excel and Timeline Explorer [here](../../overrides/assets/images/CSV-AnalysisWithExcelAndTimelineExplorer-English.pdf).
+You can learn how to analyze CSV timelines in Excel and Timeline Explorer [here](../../overrides/../assets/images/CSV-AnalysisWithExcelAndTimelineExplorer-English.pdf).
 
-You can learn how to import CSV files into Elastic Stack [here](../../overrides/assets/images/ElasticStackImport/ElasticStackImport-English.md).
+You can learn how to import CSV files into Elastic Stack [here](../../overrides/../assets/images/ElasticStackImport/ElasticStackImport-English.md).
 
-You can learn how to import CSV files into Timesketch [here](../../overrides/assets/images/TimesketchImport/TimesketchImport-English.md).
+You can learn how to import CSV files into Timesketch [here](../../overrides/../assets/images/TimesketchImport/TimesketchImport-English.md).
 
 # Analyzing JSON-formatted results with JQ
 
-You can learn how to analyze JSON-formatted results with `jq` [here](../../overrides/assets/images/AnalysisWithJQ-English.md).
+You can learn how to analyze JSON-formatted results with `jq` [here](../../overrides/../assets/images/AnalysisWithJQ-English.md).
 
 # Features
 
@@ -478,11 +478,11 @@ Then, try to run it from the Hayabusa root directory:
 
 On the latest version of macOS, you may receive the following security error when you try to run it:
 
-![Mac Error 1 EN](../../overrides/assets/images/MacOS-RunError-1-EN.png)
+![Mac Error 1 EN](../../overrides/../assets/images/MacOS-RunError-1-EN.png)
 
 Click "Cancel" and then from System Preferences, open "Security & Privacy" and from the General tab, click "Allow Anyway".
 
-![Mac Error 2 EN](../../overrides/assets/images/MacOS-RunError-2-EN.png)
+![Mac Error 2 EN](../../overrides/../assets/images/MacOS-RunError-2-EN.png)
 
 After that, try to run it again.
 
@@ -492,7 +492,7 @@ After that, try to run it again.
 
 The following warning will pop up, so please click "Open".
 
-![Mac Error 3 EN](../../overrides/assets/images/MacOS-RunError-3-EN.png)
+![Mac Error 3 EN](../../overrides/../assets/images/MacOS-RunError-3-EN.png)
 
 You should now be able to run hayabusa.
 
@@ -567,7 +567,7 @@ General Options:
 
 #### `computer-metrics` screenshot
 
-![computer-metrics screenshot](../../overrides/assets/images/ComputerMetrics.png)
+![computer-metrics screenshot](../../overrides/../assets/images/ComputerMetrics.png)
 
 ### `eid-metrics` command
 
@@ -635,7 +635,7 @@ Microsoft-Windows-Sysmon/Operational,4,Sysmon Service State Changed.
 
 #### `eid-metrics` screenshot
 
-![eid-metrics screenshot](../../overrides/assets/images/EID-Metrics.png)
+![eid-metrics screenshot](../../overrides/../assets/images/EID-Metrics.png)
 
 ### `logon-summary` command
 
@@ -691,9 +691,9 @@ Time Format:
 
 #### `logon-summary` screenshots
 
-![logon-summary successful logons screenshot](../../overrides/assets/images/LogonSummarySuccessfulLogons.png)
+![logon-summary successful logons screenshot](../../overrides/../assets/images/LogonSummarySuccessfulLogons.png)
 
-![logon-summary failed logons screenshot](../../overrides/assets/images/LogonSummaryFailedLogons.png)
+![logon-summary failed logons screenshot](../../overrides/../assets/images/LogonSummaryFailedLogons.png)
 
 ### `pivot-keywords-list` command
 
@@ -1626,7 +1626,7 @@ To create the most forensic evidence and detect with the highest accuracy, you n
 * 2023/12/11 [Unleashing the Hayabusa Feathers: My Top Features Revealed!](https://detect.fyi/hunting-with-hayabusa-tool-showcase-aafef7434413) by Christian Henriksen
 * 2023/10/16 [Incident response and threat hunting using hayabusa tool](https://mahim-firoj.medium.com/incident-response-and-threat-hunting-using-hayabusa-tool-383da273183a) by Md. Mahim Bin Firoj
 * 2023/03/21 [Find Threats in Event Logs with Hayabusa](https://blog.ecapuano.com/p/find-threats-in-event-logs-with-hayabusa) by [Eric Capuano](https://twitter.com/eric_capuano)
-* 2023/03/14 [Rust Performance Guide for Hayabusa Developers](../../overrides/assets/images/RustPerformance-English.md) by Fukusuke Takahashi
+* 2023/03/14 [Rust Performance Guide for Hayabusa Developers](../../overrides/../assets/images/RustPerformance-English.md) by Fukusuke Takahashi
 * 2022/06/19 [Velociraptor Walkthrough and Hayabusa Integration](https://www.youtube.com/watch?v=Q1IoGX--814) by [Eric Capuano](https://twitter.com/eric_capuano)
 * 2022/01/24 [Graphing Hayabusa results in neo4j](https://www.youtube.com/watch?v=7sQqz2ek-ko) by Matthew Seyer ([@forensic_matt](https://twitter.com/forensic_matt))
 
@@ -1635,7 +1635,7 @@ To create the most forensic evidence and detect with the highest accuracy, you n
 * 2024/01/24 [LME × Hayabusa　－　Windowsイベントログの集約と解析の効率化](https://jpn.nec.com/cybersecurity/blog/240126/index.html) by NEC Security Blog
 * 2023/09/29 [Fast Forensics with Hayabusa and Splunk](https://jpn.nec.com/cybersecurity/blog/230929/index.html) by NEC Security Blog
 * 2023/09/13 [Windows Event Log Analysis with Hayabusa](https://engineers.ffri.jp/entry/2023/09/13/130750) by FFRI
-* 2022/03/14 [Rust Performance Guide for Hayabusa Developers](../../overrides/assets/images/RustPerformance-Japanese.md) by Fukusuke Takahashi
+* 2022/03/14 [Rust Performance Guide for Hayabusa Developers](../../overrides/../assets/images/RustPerformance-Japanese.md) by Fukusuke Takahashi
 * 2022/01/22 [Visualizing Hayabusa results in Elastic Stack](https://qiita.com/kzzzzo2/items/ead8ccc77b7609143749) by [@kzzzzo2](https://qiita.com/kzzzzo2)
 * 2021/12/31 [Intro to Hayabusa](https://itib.hatenablog.com/entry/2021/12/31/222946) by itiB ([@itiB_S144](https://twitter.com/itiB_S144))
 * 2021/12/27 [Hayabusa internals](https://kazuminkun.hatenablog.com/entry/2021/12/27/190535) by Kazuminn ([@k47_um1n](https://twitter.com/k47_um1n))

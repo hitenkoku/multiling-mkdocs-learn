@@ -8,7 +8,7 @@ favicon: "overrides/assets/images/favicon.png"
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/ja/"
 theme:
   name: material
-  logo: "assets/images/favicon.png"
+  favicon: "assets/images/favicon.png"
   language: ja
   palette:
     - media: "(prefers-color-scheme: dark)"

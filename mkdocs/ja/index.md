@@ -26,7 +26,7 @@
 
 # Hayabusa について
 
-Hayabusaは、日本の[Yamato Security](https://yamatosecurity.connpass.com/)グループによって作られた**Windowsイベントログのファストフォレンジックタイムライン作成**および**脅威ハンティングツール**です。 Hayabusaは日本語で[「ハヤブサ」](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%A4%E3%83%96%E3%82%B5)を意味し、ハヤブサが世界で最も速く、狩猟(hunting)に優れ、とても訓練しやすい動物であることから選ばれました。[Rust](https://www.rust-lang.org/) で開発され、マルチスレッドに対応し、可能な限り高速に動作するよう配慮されています。[Sigma](https://github.com/SigmaHQ/Sigma)ルールをHayabusaルール形式に変換する[ツール](https://github.com/Yamato-Security/hayabusa-rules/tree/main/tools/sigmac)も提供しています。Hayabusaの検知ルールもSigmaと同様にYML形式であり、カスタマイズ性や拡張性に優れます。稼働中のシステムで実行してライブ調査することも、複数のシステムからログを収集してオフライン調査することも可能です。また、 [Velociraptor](https://docs.velociraptor.app/)と[Hayabusa artifact](https://docs.velociraptor.app/exchange/artifacts/pages/windows.eventlogs.hayabusa/)を用いることで企業向けの広範囲なスレットハンティングとインシデントレスポンスにも活用できます。出力は一つのCSVタイムラインにまとめられ、[LibreOffice](https://www.libreoffice.org/)、[Timeline Explorer](https://ericzimmerman.github.io/#!index.md)、[Elastic Stack](../../overrides/assets/images/ElasticStackImport/ElasticStackImport-Japanese.md)、[Timesketch](https://timesketch.org/)等で簡単に分析できるようになります。
+Hayabusaは、日本の[Yamato Security](https://yamatosecurity.connpass.com/)グループによって作られた**Windowsイベントログのファストフォレンジックタイムライン作成**および**脅威ハンティングツール**です。 Hayabusaは日本語で[「ハヤブサ」](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%A4%E3%83%96%E3%82%B5)を意味し、ハヤブサが世界で最も速く、狩猟(hunting)に優れ、とても訓練しやすい動物であることから選ばれました。[Rust](https://www.rust-lang.org/) で開発され、マルチスレッドに対応し、可能な限り高速に動作するよう配慮されています。[Sigma](https://github.com/SigmaHQ/Sigma)ルールをHayabusaルール形式に変換する[ツール](https://github.com/Yamato-Security/hayabusa-rules/tree/main/tools/sigmac)も提供しています。Hayabusaの検知ルールもSigmaと同様にYML形式であり、カスタマイズ性や拡張性に優れます。稼働中のシステムで実行してライブ調査することも、複数のシステムからログを収集してオフライン調査することも可能です。また、 [Velociraptor](https://docs.velociraptor.app/)と[Hayabusa artifact](https://docs.velociraptor.app/exchange/artifacts/pages/windows.eventlogs.hayabusa/)を用いることで企業向けの広範囲なスレットハンティングとインシデントレスポンスにも活用できます。出力は一つのCSVタイムラインにまとめられ、[LibreOffice](https://www.libreoffice.org/)、[Timeline Explorer](https://ericzimmerman.github.io/#!index.md)、[Elastic Stack](../../overrides/../assets/images/ElasticStackImport/ElasticStackImport-Japanese.md)、[Timesketch](https://timesketch.org/)等で簡単に分析できるようになります。
 
 # 関連プロジェクト
 
@@ -167,67 +167,67 @@ Windowsのイベントログは、1）解析が困難なデータ形式である
 Hayabusaは、有用なデータのみを抽出し、専門的なトレーニングを受けた分析者だけでなく、Windowsのシステム管理者であれば誰でも利用できる読みやすい形式で提示することを主な目的としています。
 Hayabusaは従来のWindowsイベントログ分析解析と比較して、分析者が20%の時間で80%の作業を行えるようにすることを目指しています。
 
-![DFIR Timeline](../../overrides/assets/images/DFIR-TimelineCreation-JP.png)
+![DFIR Timeline](../../overrides/../assets/images/DFIR-TimelineCreation-JP.png)
 
 # スクリーンショット
 
 ## 起動
 
-![Hayabusa 起動画面](../../overrides/assets/images/Startup.png)
+![Hayabusa 起動画面](../../overrides/../assets/images/Startup.png)
 
 ## DFIRタイムラインのターミナル出力
 
-![Hayabusa ターミナル出力画面](../../overrides/assets/images/Results.png)
+![Hayabusa ターミナル出力画面](../../overrides/../assets/images/Results.png)
 
 ## キーワード検索結果
 
-![Hayabusa search results](../../overrides/assets/images/SearchResults.png)
+![Hayabusa search results](../../overrides/../assets/images/SearchResults.png)
 
 ## 検知頻度タイムライン出力 (`-T`オプション)
 
-![Hayabusa 検知頻度タイムライン出力画面](../../overrides/assets/images/DetectionFrequencyTimeline.png)
+![Hayabusa 検知頻度タイムライン出力画面](../../overrides/../assets/images/DetectionFrequencyTimeline.png)
 
 ## 結果サマリ (Results Summary)
 
-![Hayabusa 結果サマリ画面](../../overrides/assets/images/ResultsSummary.png)
+![Hayabusa 結果サマリ画面](../../overrides/../assets/images/ResultsSummary.png)
 
 ## HTMLの結果サマリ (`-H`オプション)
 
-![Hayabusa results summary](../../overrides/assets/images/HTML-ResultsSummary-1.png)
+![Hayabusa results summary](../../overrides/../assets/images/HTML-ResultsSummary-1.png)
 
-![Hayabusa results summary](../../overrides/assets/images/HTML-ResultsSummary-2.png)
+![Hayabusa results summary](../../overrides/../assets/images/HTML-ResultsSummary-2.png)
 
-![Hayabusa results summary](../../overrides/assets/images/HTML-ResultsSummary-3.png)
+![Hayabusa results summary](../../overrides/../assets/images/HTML-ResultsSummary-3.png)
 
 ## LibreOfficeでのDFIRタイムライン解析 (`-M` マルチライン出力)
 
-![Hayabusa analysis in LibreOffice](../../overrides/assets/images/DFIR-TimelineLibreOfficeMultiline.jpeg)
+![Hayabusa analysis in LibreOffice](../../overrides/../assets/images/DFIR-TimelineLibreOfficeMultiline.jpeg)
 
 ## Timeline ExplorerでのDFIRタイムライン解析
 
-![Hayabusa Timeline Explorerでの解析](../../overrides/assets/images/TimelineExplorer-ColoredTimeline.png)
+![Hayabusa Timeline Explorerでの解析](../../overrides/../assets/images/TimelineExplorer-ColoredTimeline.png)
 
 ## Criticalアラートのフィルタリングとコンピュータごとのグルーピング
 
-![Timeline ExplorerでCriticalアラートのフィルタリングとコンピュータグルーピング](../../overrides/assets/images/TimelineExplorer-CriticalAlerts-ComputerGrouping.png)
+![Timeline ExplorerでCriticalアラートのフィルタリングとコンピュータグルーピング](../../overrides/../assets/images/TimelineExplorer-CriticalAlerts-ComputerGrouping.png)
 
 ## Elastic Stackダッシュボードでの解析
 
-![Elastic Stack Dashboard 1](../../overrides/assets/images/ElasticStackImport/17-HayabusaDashboard-1.png)
+![Elastic Stack Dashboard 1](../../overrides/../assets/images/ElasticStackImport/17-HayabusaDashboard-1.png)
 
-![Elastic Stack Dashboard 2](../../overrides/assets/images/ElasticStackImport/18-HayabusaDashboard-2.png)
+![Elastic Stack Dashboard 2](../../overrides/../assets/images/ElasticStackImport/18-HayabusaDashboard-2.png)
 
 ## Timesketchでの解析
 
-![Timesketch](../../overrides/assets/images/TimesketchAnalysis.png)
+![Timesketch](../../overrides/../assets/images/TimesketchAnalysis.png)
 
 # タイムライン結果のインポートと解析について
 
-CSVのタイムラインをExcelやTimeline Explorerで分析する方法は[こちら](../../overrides/assets/images/CSV-AnalysisWithExcelAndTimelineExplorer-Japanese.pdf)で紹介しています。
+CSVのタイムラインをExcelやTimeline Explorerで分析する方法は[こちら](../../overrides/../assets/images/CSV-AnalysisWithExcelAndTimelineExplorer-Japanese.pdf)で紹介しています。
 
-CSVのタイムラインをElastic Stackにインポートする方法は[こちら](../../overrides/assets/images/ElasticStackImport/ElasticStackImport-Japanese.md)で紹介しています。
+CSVのタイムラインをElastic Stackにインポートする方法は[こちら](../../overrides/../assets/images/ElasticStackImport/ElasticStackImport-Japanese.md)で紹介しています。
 
-CSVのタイムラインをTimesketchにインポートする方法は[こちら](../../overrides/assets/images/TimesketchImport/TimesketchImport-Japanese.md)で紹介しています。
+CSVのタイムラインをTimesketchにインポートする方法は[こちら](../../overrides/../assets/images/TimesketchImport/TimesketchImport-Japanese.md)で紹介しています。
 
 # jqによるJSON形式の結果の解析
 
@@ -478,11 +478,11 @@ chmod +x ./hayabusa
 
 macOSの最新版では、以下のセキュリティ警告が出る可能性があります：
 
-![Mac Error 1 JP](../../overrides/assets/images/MacOS-RunError-1-JP.png)
+![Mac Error 1 JP](../../overrides/../assets/images/MacOS-RunError-1-JP.png)
 
 macOSの環境設定から「セキュリティとプライバシー」を開き、「一般」タブから「このまま許可」ボタンをクリックしてください。
 
-![Mac Error 2 JP](../../overrides/assets/images/MacOS-RunError-2-JP.png)
+![Mac Error 2 JP](../../overrides/../assets/images/MacOS-RunError-2-JP.png)
 
 その後、ターミナルからもう一回実行してみてください：
 
@@ -492,7 +492,7 @@ macOSの環境設定から「セキュリティとプライバシー」を開き
 
 以下の警告が出るので、「開く」をクリックしてください。
 
-![Mac Error 3 JP](../../overrides/assets/images/MacOS-RunError-3-JP.png)
+![Mac Error 3 JP](../../overrides/../assets/images/MacOS-RunError-3-JP.png)
 
 これで実行できるようになります。
 
@@ -567,7 +567,7 @@ General Options:
 
 #### `computer-metrics`のスクリーンショット
 
-![computer-metrics screenshot](../../overrides/assets/images/ComputerMetrics.png)
+![computer-metrics screenshot](../../overrides/../assets/images/ComputerMetrics.png)
 
 ### `eid-metrics`コマンド
 
@@ -635,7 +635,7 @@ Microsoft-Windows-Sysmon/Operational,4,Sysmon Service State Changed.
 
 #### `eid-metrics`のスクリーンショット
 
-![eid-metrics screenshot](../../overrides/assets/images/EID-Metrics.png)
+![eid-metrics screenshot](../../overrides/../assets/images/EID-Metrics.png)
 
 ### `logon-summary`コマンド
 
@@ -691,9 +691,9 @@ Time Format:
 
 #### `logon-summary`のスクリーンショット
 
-![logon-summary successful logons screenshot](../../overrides/assets/images/LogonSummarySuccessfulLogons.png)
+![logon-summary successful logons screenshot](../../overrides/../assets/images/LogonSummarySuccessfulLogons.png)
 
-![logon-summary failed logons screenshot](../../overrides/assets/images/LogonSummaryFailedLogons.png)
+![logon-summary failed logons screenshot](../../overrides/../assets/images/LogonSummaryFailedLogons.png)
 
 ### `pivot-keywords-list`コマンド
 
@@ -1626,7 +1626,7 @@ Windows機での悪性な活動を検知する為には、デフォルトのロ�
 * 2023/12/11 Christian Henriksen氏による[Unleashing the Hayabusa Feathers: My Top Features Revealed!](https://detect.fyi/hunting-with-hayabusa-tool-showcase-aafef7434413)
 * 2023/10/16 Md. Mahim Bin Firoj氏による[Incident response and threat hunting using hayabusa tool](https://mahim-firoj.medium.com/incident-response-and-threat-hunting-using-hayabusa-tool-383da273183a)
 * 2023/03/21 [Eric Capuano](https://twitter.com/eric_capuano)氏による[Find Threats in Event Logs with Hayabusa](https://blog.ecapuano.com/p/find-threats-in-event-logs-with-hayabusa)
-* 2023/03/14 Fukusuke Takahashi氏による[Hayabusa開発者向けRustパフォーマンスガイド](../../overrides/assets/images/RustPerformance-English.md)
+* 2023/03/14 Fukusuke Takahashi氏による[Hayabusa開発者向けRustパフォーマンスガイド](../../overrides/../assets/images/RustPerformance-English.md)
 * 2022/06/19 [Eric Capuano](https://twitter.com/eric_capuano)氏による[VelociraptorチュートリアルとHayabusaの統合方法](https://www.youtube.com/watch?v=Q1IoGX--814)
 * 2022/01/24 Matthew Seyer ([@forensic_matt](https://twitter.com/forensic_matt))氏による[Hayabusa結果をneo4jで可視化する方法](https://www.youtube.com/watch?v=7sQqz2ek-ko)
 
@@ -1635,7 +1635,7 @@ Windows機での悪性な活動を検知する為には、デフォルトのロ�
 * 2024/01/24 NECセキュリティブログ: [LME × Hayabusa　－　Windowsイベントログの集約と解析の効率化](https://jpn.nec.com/cybersecurity/blog/240126/index.html)
 * 2023/09/29 NECセキュリティブログ: [HayabusaとSplunkによるファストフォレンジック効率化](https://jpn.nec.com/cybersecurity/blog/230929/index.html)
 * 2023/09/13 FFRIセキュリティブログ: [HayabusaによるWindowsイベントログ解析](https://engineers.ffri.jp/entry/2023/09/13/130750)
-* 2023/03/14 Fukusuke Takahashi氏による[Hayabusa開発者向けRustパフォーマンスガイド](../../overrides/assets/images/RustPerformance-Japanese.md)
+* 2023/03/14 Fukusuke Takahashi氏による[Hayabusa開発者向けRustパフォーマンスガイド](../../overrides/../assets/images/RustPerformance-Japanese.md)
 * 2022/01/22 [@kzzzzo2](https://qiita.com/kzzzzo2)氏による[Hayabusa結果をElastic Stackで可視化する方法](https://qiita.com/kzzzzo2/items/ead8ccc77b7609143749)
 * 2021/12/31 itiB ([@itiB_S144](https://twitter.com/itiB_S144))氏による[Windowsイベントログ解析ツール「Hayabusa」を使ってみる](https://itib.hatenablog.com/entry/2021/12/31/222946)
 * 2021/12/27 Kazuminn ([@k47_um1n](https://twitter.com/k47_um1n))氏による[Hayabusaの中身](https://kazuminkun.hatenablog.com/entry/2021/12/27/190535)
