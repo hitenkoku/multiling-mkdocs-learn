@@ -1,6 +1,6 @@
 <div align="center">
  <p>
-    <img alt="Hayabusa Logo" src="assets/images/logo.png" width="60%">
+    <img alt="Hayabusa Logo" src="../assets/images/logo.png" width="60%">
  </p>
  [ <b>English</b> ] | [<a href="../ja">日本語</a>]
 </div>
