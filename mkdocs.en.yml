@@ -3,11 +3,11 @@ INHERIT: mkdocs.yml
 site_name: Hayabusa
 docs_dir: "mkdocs/en/"
 site_dir: "site/en/"
-custom_dir: "overrides/"
 favicon: "overrides/assets/images/favicon.png"
 site_url: "https://hitenkoku.github.io/multiling-mkdocs-learn/en/"
 theme:
   name: material
+  custom_dir: "overrides/"
   favicon: "assets/images/favicon.png"
   features:
     - content.action.edit
