@@ -14,6 +14,18 @@ theme:
     - content.action.view
     - content.tooltips
     - navigation.sections
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+      - navigation.indexes
+      - navigation.sections
+      - navigation.tabs
+      - navigation.tabs.sticky
+    - navigation.path
+      - navigation.top
+      - navigation.expand
+    - content.code.copy
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
