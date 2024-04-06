@@ -34,11 +34,22 @@ theme:
         name: Switch to system preference
 
   features:
-    - navigation.tabs
-    - navigation.instant
-    - navigation.top
-    - search.suggest
     - content.action.edit
+    - content.action.view
+    - content.tooltips
+    - navigation.sections
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+      - navigation.indexes
+      - navigation.sections
+      - navigation.tabs
+      - navigation.tabs.sticky
+    - navigation.path
+      - navigation.top
+      - navigation.expand
+    - content.code.copy
 
 nav:
   - "Hayabusa": https://hitenkoku.github.io/multiling-mkdocs-learn/
