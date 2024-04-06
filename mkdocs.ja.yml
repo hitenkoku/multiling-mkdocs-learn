@@ -37,6 +37,7 @@ theme:
     - navigation.path
       - navigation.top
       - navigation.expand
+      - navigation.indexes
     - content.code.copy
 plugins:
   - search:
