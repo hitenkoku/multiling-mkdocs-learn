@@ -72,5 +72,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
+  - toc:
+    toc_depth: 3
 copyright: |
   &copy; 2024 <a href="https://github.com/Yamato-Security"  target="_blank" rel="noopener">Yamato Security</a>
