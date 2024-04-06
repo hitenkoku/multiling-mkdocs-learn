@@ -40,7 +40,9 @@ theme:
     - content.code.copy
 plugins:
   - search:
-      lang: tr
+      lang: ja
+
+nav:
 extra:
   version:
     provider: mike
