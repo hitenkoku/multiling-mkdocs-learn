@@ -74,6 +74,7 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: true
+      toc_depth: 3
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.details
@@ -92,8 +93,6 @@ markdown_extensions:
   - pymdownx.tilde
   - md_in_html
   - pymdownx.keys
-  - toc:
-    toc_depth: 3
 
 plugins:
   - search: {}
